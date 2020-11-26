@@ -1,9 +1,41 @@
+/*police d'écriture*/
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('polices/Raleway-Regular.ttf');
+    src: url('polices/raleway-regular-webfont.eot');
+    src: url('polices/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/raleway-regular-webfont.woff2') format('woff2'),
+         url('polices/raleway-regular-webfont.woff') format('woff'),
+         url('polices/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /*général*/
 
-header, img, section, nav, article, aside, footer, li
+section, article, aside, footer
 {
     border: 2px solid black;
     margin-bottom: 5px;
+}
+h3
+{
+    border: 2px solid green;
+}
+body
+{
+    font-family: 'ralewayregular','Trebuchet MS', Arial, sans-serif;
+}
+
+
+#bloc_page
+{
+ width: 95%;
+ margin: auto;
+}
+h1, h2, h3
+{
+    font-weight: bold;
 }
 ul
 {
@@ -14,12 +46,12 @@ ul
 
 /*général*/
 
-/*Header*/
-.laPetiteEnTete /*block header*/
+/* =================================================     Header    ================================================= */
+header /*block header*/
 {
     width: 100%;
-    height: 200px;
-
+    height: 100px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row ;
     justify-content: space-between;
@@ -29,28 +61,141 @@ ul
 
 #logo /*logo*/
 {
-    width: 70px;
-    height: 40px;
+    width: 100px;
+    height: 50px;
 }
 
-
-nav{
-    width: 500px;
-    
-}
-
-.navigation /*ul top*/
+nav
 {
-    color: blue;
-    margin-top: 2px;
+    width: 500px;
+    height: 150px;
+}
+
+nav ul
+{
+    color:black;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: baseline;
-   
+}
+
+nav a
+{
+    color:black;
+    font-size: 0.9em;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 40px;
+}
+
+nav #inscrire
+{
+    color:#0065FC;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+nav #inscrire:hover
+{
+    color: #0065FC;
+    border-top: none;
+}
+
+/* =================================================     Header    ================================================= */
+
+/* ================================================= Section haute ================================================= */
+/*Zone recherche*/
+
+#barreRecherche
+{
+    display: flex;
+    margin-left: 15px;
 }
 
 
-/*Header*/
+
+
+h1
+{
+
+}
+
+h2
+{
+
+}
+
+.logorecherche
+{
+    background-color: #f2f2f2;
+    height: 30px;
+    width: 30px;
+    border-radius:  10px 0px 0px 10px;
+    display: flex;
+}
+
+.logorecherche i
+{
+    margin: auto;
+}
+#search
+{
+    font-weight: bold;
+}
+
+
+button
+{
+    background-color: #0065FC;
+    color: white;
+    height: 30px;
+    width: 90px;
+    border-radius: 0px 10px 10px 0px;
+}
+/*Zone recherche*/
+
+/*Zone filtres*/
+.filtres
+{
+    border : 2px solid black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filtres ul
+{
+    border : 2px solid black;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.filtres li
+{
+    border : 2px solid black;
+   
+}
+/*Zone filtres*/
+/* ================================================= Section Haute ================================================= */
+
+/* =================================================  Section Mid  ================================================= */
+/* =================================================  Section Mid  ================================================= */
+
+/* =================================================  Section bas  ================================================= */
+/* =================================================  Section bas  ================================================= */
+
+/* =================================================    footer     ================================================= */
+/* =================================================    footer     ================================================= */
 
 
 

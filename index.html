@@ -6,101 +6,109 @@
     <title>P2_Projet_Reservia</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://kit.fontawesome.com/ff7c69c40e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!--L'en tête-->
-    <header>
-        <div class="laPetiteEnTete">
-            <img id="logo" src="images/logo/Reservia@3x.png" >
+    <div id="bloc_page">
+        <!--L'en tête-->
+        <header>
+            <img id="logo" src="images/logo/Reservia@3x.png" alt="logo reservia" />
+                
             <nav>
-                <ul class="navigation">
-                    <li>Hébergements</li>
-                    <li>Activités</li>
-                    <li>S'inscrire</li>
+                <ul>
+                    <li><a href="#">hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                    <li><a id="inscrire" href="#">S'inscrire</a></li>
                 </ul>
             </nav>
+        </header>
+        <!--L'en tête-->
 
-        </div>
-    </header>
-    <!--L'en tête-->
-
-    <!--Section1 "trouver ses vacances de rêve -->
-    <section>
-        <h1>Trouver votre hébergement pour des vacances de rêve</h1> 
+        <!--Section1 "trouver ses vacances de rêve -->
+        <section>
+            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <p>en plein centre ville ou en pleine nature</p>
-            <div class="recherche"></div>
-            <h2>Filtres</h2>
-            <ul>
-                <li>Economique</li>
-                <li>Famillial</li>
-                <li>Romantique</li>
-                <li>animaux autorisés</li>
-            </ul>
+            <div class="recherche">
+                <form  method="POST" action="reference.php">
+                    <p id="barreRecherche"><label for="search"><span class="logorecherche"><i class="fas fa-map-marker-alt"></i></span></label>
+                    <input type="search" id="search" value="Marseille, France"  />
+                    <button>Rechercher</button></p>
+                </form>
+            </div>
+            <div class="filtres">
+                <h2>Filtres</h2>
+                <ul>
+                    <li>Economique</li>
+                    <li>Famillial</li>
+                    <li>Romantique</li>
+                    <li>animaux autorisés</li>
+                </ul>
+            </div>
+        </section>
+        <!--Section1 "trouver ses vacances de rêve -->
 
-    </section>
-    <!--Section1 "trouver ses vacances de rêve -->
-
-    <!--section2 "les hébergements"-->
-       <section>
-            <article>
-                <h2>Hébergements à Marseille</h2>
-                <a href="">Auberge de la Cannebière</a>
-                <a href="">Hôtel du port</a>
-                <a href="">Hôtel les mouettes</a>
-                <a href="">Hôtel de la mer</a>
-                <a href="">Auberge le panier</a>
-                <a href="">Hôtel chez Amina</a>
-                <p>afficher plus</p>
-            </article>
-            <aside>
-                <h2>Les plus populaires</h2>
-                <a href="">Hôtel Le soleil du matin</a>
-                <a href="">Au coeur de l'eau Chambres d'hôtes</a>
-                <a href="">Hôtel Tout bleu et Blanc</a>
-            </aside>
-    </section>
-    <!--section2 "les hébergements"-->
-
-
-    <!--section3 "les activités"-->
-    <section>
-        <h2>Activités à Marseille</h2>
-        <a href="">Vieux port</a>
-        <a href="">Fort de Pomègues</a>
-        <a href="">Îles du Frioul</a>
-        <a href="">Parc National des Calanques</a>
-        <a href="">Parc Longchamp</a>
-    </section>
-    <!--section3 "les activités"-->
+        <!--section2 "les hébergements"-->
+        <section>
+                <article>
+                    <h2>Hébergements à Marseille</h2>
+                    <a href="">Auberge de la Cannebière</a>
+                    <a href="">Hôtel du port</a>
+                    <a href="">Hôtel les mouettes</a>
+                    <a href="">Hôtel de la mer</a>
+                    <a href="">Auberge le panier</a>
+                    <a href="">Hôtel chez Amina</a>
+                    <p>afficher plus</p>
+                </article>
+                <aside>
+                    <h2>Les plus populaires</h2>
+                    <a href="">Hôtel Le soleil du matin</a>
+                    <a href="">Au coeur de l'eau Chambres d'hôtes</a>
+                    <a href="">Hôtel Tout bleu et Blanc</a>
+                </aside>
+        </section>
+        <!--section2 "les hébergements"-->
 
 
-    <!--le pied de page-->
-    <footer>
-        <div class="aPropos">
-            <h3>A propos</h3>
-            <ul>
-                <li>fonctionnement du site</li>
-                <li>conditions générales de vente</li>
-                <li>données de confidentialité</li>
-            </ul>
-        </div>
+        <!--section3 "les activités"-->
+        <section>
+            <h2>Activités à Marseille</h2>
+            <a href="">Vieux port</a>
+            <a href="">Fort de Pomègues</a>
+            <a href="">Îles du Frioul</a>
+            <a href="">Parc National des Calanques</a>
+            <a href="">Parc Longchamp</a>
+        </section>
+        <!--section3 "les activités"-->
 
-        <div class="nosHebergement">
-            <h3>Nos Hébergements</h3>
-            <ul>
-                <li>Chartre qualité</li>
-                <li>Soumettre votre hôtel</li>
-            </ul>
-        </div>
-        <div class="assitance">
-            <h3>Assistance</h3>
-            <ul>
-                <li>Centre d'aide</li>
-                <li>Nous contacter</li>
-            </ul>
+
+        <!--le pied de page-->
+        <footer>
+            <div class="aPropos">
+                <h3>A propos</h3>
+                <ul>
+                    <li>fonctionnement du site</li>
+                    <li>conditions générales de vente</li>
+                    <li>données de confidentialité</li>
+                </ul>
+            </div>
+
+            <div class="nosHebergement">
+                <h3>Nos Hébergements</h3>
+                <ul>
+                    <li>Chartre qualité</li>
+                    <li>Soumettre votre hôtel</li>
+                </ul>
+            </div>
+            <div class="assitance">
+                <h3>Assistance</h3>
+                <ul>
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
         </div>
     </footer>
     <!--le pied de page-->
+    </div>
 </body>
 </html>
