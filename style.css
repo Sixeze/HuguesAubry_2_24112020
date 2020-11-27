@@ -13,7 +13,7 @@
 }
 /*général*/
 
-section, article, aside, footer
+section, aside, footer
 {
     border: 2px solid black;
     margin-bottom: 5px;
@@ -187,6 +187,67 @@ button
 }
 /*Zone filtres*/
 /* ================================================= Section Haute ================================================= */
+.section1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+
+
+article
+{
+    border: 1px solid red;
+    width: 60%;
+    margin-right: 10px;
+}
+
+aside
+{
+        border: 1px solid red;
+        width: 30%;
+    
+}
+
+.vignetteHebergements
+{
+    border: 1px solid black;
+    border-radius: 10px/10px;
+    width: 300px;
+}
+
+.vignetteHebergements img
+{
+    
+    width: 300px;
+}
+
+.noteEtoiles
+{
+    direction: rtl;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.noteEtoiles a {
+    
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color .4s;
+}
+
+    .noteEtoiles a:hover, .noteEtoiles a:focus,
+    .noteEtoiles a:hover ~ a, .noteEtoiles a:focus ~ a
+    {
+   color:  #0065FC;
+   cursor: pointer;
+}
+
 
 /* =================================================  Section Mid  ================================================= */
 /* =================================================  Section Mid  ================================================= */
