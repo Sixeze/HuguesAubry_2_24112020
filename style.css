@@ -187,7 +187,7 @@ button
 }
 /*Zone filtres*/
 /* ================================================= Section Haute ================================================= */
-.section1
+.section1 /* fonction général de la section1*/
 {
     display: flex;
     flex-direction: row;
@@ -195,7 +195,7 @@ button
     align-items: baseline;
     
 }
-
+/* fonction de l'article*/
 
 article
 {
@@ -204,12 +204,7 @@ article
     margin-right: 10px;
 }
 
-aside
-{
-        border: 1px solid red;
-        width: 30%;
-    
-}
+
 
 .vignetteHebergements
 {
@@ -224,10 +219,99 @@ aside
     width: 300px;
 }
 
+/*fonction de l'article */
+
+/*fonction du aside*/
+aside
+{
+        border: 1px solid #f2f2f2;
+        border-radius: 30px/30px;
+        background-color: #f2f2f2;
+        width: 25%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    
+}
+.asideTitre
+{
+  
+   width: 400px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+    
+}
+
+.asideTitre h2
+{
+    border: 1px solid green;
+}
+
+.asideTitre i
+{
+    width: 20px;
+    height: 20px;
+    font-size: 1.3em;
+    
+    border: 1px solid orange;
+    margin-top: 2px;
+
+}
+.vignettePopulaires
+{
+    display: flex;
+    
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    width: 400px;
+    height: 160px;
+}
+
+.vignettePopulaires Img
+{
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    width: 160px;
+    height: 150px;
+    padding: 5px;
+}
+
+.vignettePopulairesTxt
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.vignettePopulairesTxt h3
+{
+    font-size: 1.2em;
+    margin-bottom: 1px;
+}
+.vignettePopulairesTxt p
+{
+    font-size: 0.9em;
+    margin-top: 0px;
+    
+}
+
+.noteEtoiles
+{
+   
+    margin-top: auto;
+    
+}
+/*fonction du aside*/
+
+/* css de la class noteEtoiles*/
+
 .noteEtoiles
 {
     direction: rtl;
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -247,6 +331,8 @@ aside
    color:  #0065FC;
    cursor: pointer;
 }
+
+/* css de la class noteEtoiles*/
 
 
 /* =================================================  Section Mid  ================================================= */
