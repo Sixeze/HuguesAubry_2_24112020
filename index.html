@@ -1,217 +1,237 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>P2_Projet_Reservia</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src="https://kit.fontawesome.com/ff7c69c40e.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>P2_Projet_Reservia</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+        <script src="https://kit.fontawesome.com/ff7c69c40e.js" crossorigin="anonymous"></script>
+    </head>
 
-<body>
-    <div id="bloc_page">
-        <!--L'en tête-->
-        <header>
-            <img id="logo" src="images/logo/Reservia@3x.png" alt="logo reservia" />
-                
-            <nav>
-                <ul>
-                    <li><a href="#">hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                    <li><a id="inscrire" href="#">S'inscrire</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!--L'en tête-->
+    <body>
+        <div id="bloc_page">
+            <!--L'en tête-->
+            <header>
+                <img id="logo" src="images/logo/Reservia@3x.png" alt="logo reservia" />
+                <nav>
+                    <ul>
+                        <li><a href="#">hébergements</a></li>
+                        <li><a href="#">Activités</a></li>
+                        <li><a id="inscrire" href="#">S'inscrire</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--L'en tête-->
 
-        <!--Section1 "trouver ses vacances de rêve -->
-        <section>
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-            <p>en plein centre ville ou en pleine nature</p>
-            <div class="recherche">
-                <form  method="POST" action="reference.php">
-                    <p id="barreRecherche"><label for="search"><span class="logorecherche"><i class="fas fa-map-marker-alt"></i></span></label>
-                    <input type="search" id="search" value="Marseille, France"  />
-                    <button>Rechercher</button></p>
-                </form>
-            </div>
-            <div class="filtres">
-                <h2>Filtres</h2>
-                <ul>
-                    <li><i class="fas fa-money-bill-wave">Economique</i></li>
-                    <li><i class="fas fa-child"></i>Famillial</li>
-                    <li><i class="fas fa-heart"></i>Romantique</li>
-                    <li><i class="fas fa-dog"></i>animaux autorisés</li>
-                </ul>
-            </div>
-        </section>
-        <!--Section1 "trouver ses vacances de rêve -->
+            <!--Section1 "trouver ses vacances de rêve -->
+            <section>
+                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                <p>en plein centre ville ou en pleine nature</p>
+                <div class="recherche">
+                    <form  method="POST" action="reference.php">
+                        <p id="barreRecherche"><label for="search"><span class="logorecherche"><i class="fas fa-map-marker-alt"></i></span></label>
+                        <input type="search" id="search" value="Marseille, France"  />
+                        <button>Rechercher</button></p>
+                    </form>
+                </div>
+                <div class="filtres">
+                    <h2>Filtres</h2>
+                    <ul>
+                        <li><i class="fas fa-money-bill-wave">Economique</i></li>
+                        <li><i class="fas fa-child"></i>Famillial</li>
+                        <li><i class="fas fa-heart"></i>Romantique</li>
+                        <li><i class="fas fa-dog"></i>animaux autorisés</li>
+                    </ul>
+                </div>
+            </section>
+            <!--Section1 "trouver ses vacances de rêve -->
 
-        <!--section2 "les hébergements"-->
-        <section class="section1">
-            <article>
-                <h2>Hébergements à Marseille</h2>
+            <!--section2 "les hébergements"-->
+            <section class="section2">
+                <article>
+                    <h2>Hébergements à Marseille</h2>
                     <div class="vignetteHebergements"><a href="Auberge de la Cannebière"><img src="images/Hebergements/chambreFer_S.jpg" alt="chambrefer" /></a>
-                        <h3>Auberge de la Cannebière</h3> 
-                        <p>nuit à partir de 25€</p>
-                        <div class="noteEtoiles"><!--
-                            --><a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
-                        </div> 
+                        <div class="vignetteHebergementsTxt">
+                            <h3>Auberge de la Cannebière</h3>
+                            <p>nuit à partir de 25€</p>
+                            <div class="noteEtoiles"><!--
+                                --><a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="vignetteHebergements"><a href="Hôtel du port"><img src="images/Hebergements/chambreGrise_M.jpg" alt="chambreGrise" /></a>
-                        <h3>Hôtel du port</h3>
-                        <p>nuit à partir de 52€</p>
-                        <div class="noteEtoiles"><!--
-                            --><a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
-                        </div> 
+                        <div class="vignetteHebergementsTxt">
+                            <h3>Hôtel du port</h3>
+                            <p>nuit à partir de 52€</p>
+                            <div class="noteEtoiles"><!--
+                                --><a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="vignetteHebergements"><a href="Hôtel les mouettes"><img src="images/Hebergements/chambreMirroir_M.jpg" alt="chambreGrise" /></a>
-                        <h3>Hôtel les mouettes</h3>
-                        <p>nuit à partir de 76€</p>
-                        <div class="noteEtoiles"><!--
-                            --><a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                        <div class="vignetteHebergementsTxt">
+                            <h3>Hôtel les mouettes</h3>
+                            <p>nuit à partir de 76€</p>
+                            <div class="noteEtoiles"><!--
+                                --><a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="vignetteHebergements"><a href="Hôtel de la mer"><img src="images/Hebergements/chambreBlue_M.jpg" alt="chambreBlue" /></a>
-                        <h3>Hôtel de la mer</h3>
-                        <p>nuit à partir de 46€</p>
-                        <div class="noteEtoiles"><!--
-                            --><a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                        <div class="vignetteHebergementsTxt">
+                            <h3>Hôtel de la mer</h3>
+                            <p>nuit à partir de 46€</p>
+                            <div class="noteEtoiles"><!--
+                                --><a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="vignetteHebergements"><a href="Auberge le panier"><img src="images/Hebergements/chambreBois_M.jpg" alt="chambreBois" /></a>
-                        <h3>Auberge le panier</h3>
-                        <p>nuit à partir de 23€</p>
-                        <div class="noteEtoiles"><!--
-                            --><a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                        <div class="vignetteHebergementsTxt">
+                            <h3>Auberge le panier</h3>
+                            <p>nuit à partir de 23€</p>
+                            <div class="noteEtoiles"><!--
+                                --><a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="vignetteHebergements"><a href="Hôtel chez Amina"><img src="images/Hebergements/chambreBlanche_M.jpg" alt="chambreBlanche" /></a>
-                        <h3>Hôtel chez Amina</h3>
-                        <p>nuit à partir de 96€</p>
-                        <div class="noteEtoiles"> 
-                            --><a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                        <div class="vignetteHebergementsTxt">
+                            <h3>Hôtel chez Amina</h3>
+                            <p>nuit à partir de 96€</p>
+                            <div class="noteEtoiles">
+                                <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                            </div>
                         </div>
                     </div>
-                <h3>afficher plus</h3>
-            </article>
+                    <h3>afficher plus</h3>
+                </article>
 
-            <aside>
-                <div class="asideTitre">
-                    <h2>Les plus populaires</h2>
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <div class="vignettePopulaires">
-                    <a href="Hôtel le soleil du matin"><img src="images/Hebergements/chambreVerte_M.jpg" alt="chambreVerte" /></a>
-                    <div class="vignettePopulairesTxt">
-                        <h3>Hôtel le soleil du matin</h3>
-                        <p>nuit à partir de 128€</p>
-                        <div class="noteEtoiles"> 
-                            <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
-                            --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                <aside>
+                    <div class="asideTitre">
+                        <h2>Les plus populaires</h2>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="vignettePopulaires">
+                        <a href="Hôtel le soleil du matin"><img src="images/Hebergements/chambreVerte_M.jpg" alt="chambreVerte" /></a>
+                        <div class="vignettePopulairesTxt">
+                            <h3>Hôtel le soleil du matin</h3>
+                            <p>nuit à partir de 128€</p>
+                            <div class="noteEtoiles">
+                                <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                    
-                <div class="vignettePopulaires">
-                    <a href="Au coeur de l'eau Chambres d'hôtes"><img src="images/Hebergements/chambreIndus_M.jpg" alt="chambreIndus" /></a>
-                    <div class="vignettePopulairesTxt">
-                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                    <p>nuit à partir de 71€</p>    
-                    <div class="noteEtoiles"> 
-                        <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
-                        --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
-                        --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
-                        --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
-                        --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                    <div class="vignettePopulaires">
+                        <a href="Au coeur de l'eau Chambres d'hôtes"><img src="images/Hebergements/chambreIndus_M.jpg" alt="chambreIndus" /></a>
+                        <div class="vignettePopulairesTxt">
+                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                            <p>nuit à partir de 71€</p>
+                            <div class="noteEtoiles">
+                                <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                            </div>
+                        </div>
                     </div>
+                    <div class="vignettePopulaires">
+                        <a href="Hôtel Tout bleu et Blanc"><img src="images/Hebergements/chambreBlanche2_M.jpg" alt="chambreBlanche2" /></a>
+                        <div class="vignettePopulairesTxt"><h3>Hôtel Tout bleu et Blanc</h3>
+                            <p>nuit à partir de 68€</p>
+                            <div class="noteEtoiles">
+                                <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
+                                --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                            </div>
+                        </div>
                     </div>
+                </aside>
+            </section>
+            <!--section2 "les hébergements"-->
+
+
+            <!--section3 "les activités"-->
+            <section class="section3">
+                <h2>Activités à Marseille</h2>
+                <div class="vignetteActivités...">
+                    <a href="Vieux port"><img src="images/Activites/bateaux_M.jpg" alt="Vieux Port" /></a>
+                    <h3>Vieux Port</h3>
                 </div>
-                <div class="vignettePopulaires">
-                    <a href="Hôtel Tout bleu et Blanc"><img src="images/Hebergements/chambreBlanche2_M.jpg" alt="chambreBlanche2" /></a>
-                    <div class="vignettePopulairesTxt"><h3>Hôtel Tout bleu et Blanc</h3>
-                    <p>nuit à partir de 68€</p>
-                    <div class="noteEtoiles"> 
-                    <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
-                    --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
-                    --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
-                    --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
-                    --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
-                    </div>
+                <div class="vignetteActivités...">
+                    <a href="Fort de Pomègues"><img src="images/Activites/bunker_M.jpg" alt="Fort de Pomègues" /></a>
+                <h3>Fort de Pomègues</h3>
+                <div class="vignetteActivités..."></div><a href="Îles du Frioul"><img src="images/Activites/longueVue_M.jpg" alt="Îles du Frioul" /></a>
+                <h3>Îles du Frioul</h3>
+                <div class="vignetteActivités..."></div><a href="Parc National des Calanques"><img src="images/Activites/calanque_M.jpg" alt="Parc National des Calanques" /></a>
+                <h3>Parc National des Calanques</h3>
+                <div class="vignetteActivités..."></div><a href="Notre Dame de la Garde"><img src="images/Activites/basiliqueColline_M.jpg" alt="Notre Dame de la Garde" /></a>
+                <h3>Notre Dame de la Garde</h3>
+                <div class="vignetteActivités..."></div><a href="Parc Longchamp"><img src="images/Activites/fontaine_M.jpg" alt="Parc Longchamp" /></a>
+                <h3>Parc Longchamp</h3>
+            </section>
+            <!--section3 "les activités"-->
+
+
+            <!--le pied de page-->
+            <footer>
+                <div class="aPropos">
+                    <h3>A propos</h3>
+                    <ul>
+                        <li>fonctionnement du site</li>
+                        <li>conditions générales de vente</li>
+                        <li>données de confidentialité</li>
+                    </ul>
                 </div>
+
+                <div class="nosHebergement">
+                    <h3>Nos Hébergements</h3>
+                    <ul>
+                        <li>Chartre qualité</li>
+                        <li>Soumettre votre hôtel</li>
+                    </ul>
                 </div>
-            </aside>
-        </section>
-        <!--section2 "les hébergements"-->
-
-
-        <!--section3 "les activités"-->
-        <section>
-            <h2>Activités à Marseille</h2>
-            <a href="">Vieux port</a>
-            <a href="">Fort de Pomègues</a>
-            <a href="">Îles du Frioul</a>
-            <a href="">Parc National des Calanques</a>
-            <a href="">Parc Longchamp</a>
-        </section>
-        <!--section3 "les activités"-->
-
-
+                <div class="assitance">
+                    <h3>Assistance</h3>
+                    <ul>
+                        <li>Centre d'aide</li>
+                        <li>Nous contacter</li>
+                    </ul>
+            </div>
+        </footer>
         <!--le pied de page-->
-        <footer>
-            <div class="aPropos">
-                <h3>A propos</h3>
-                <ul>
-                    <li>fonctionnement du site</li>
-                    <li>conditions générales de vente</li>
-                    <li>données de confidentialité</li>
-                </ul>
-            </div>
-
-            <div class="nosHebergement">
-                <h3>Nos Hébergements</h3>
-                <ul>
-                    <li>Chartre qualité</li>
-                    <li>Soumettre votre hôtel</li>
-                </ul>
-            </div>
-            <div class="assitance">
-                <h3>Assistance</h3>
-                <ul>
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
-                </ul>
         </div>
-    </footer>
-    <!--le pied de page-->
-    </div>
-</body>
-</html>
+    </body>
+    </html>
