@@ -15,11 +15,7 @@
 
                                                     /*général*/
 
-footer
-{
-    border: 2px solid black;
-    margin-bottom: 5px;
-}
+
 
 body
 {
@@ -112,14 +108,14 @@ nav #inscrire:hover
 #barreRecherche
 {
     display: flex;
-    margin-left: 15px;
+    
 }
 
 .logorecherche
 {
     background-color: #f2f2f2;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius:  10px 0px 0px 10px;
     display: flex;
 }
@@ -138,8 +134,8 @@ button
 {
     background-color: #0065FC;
     color: white;
-    height: 30px;
-    width: 90px;
+    width: 100px;
+    height: 40px;
     border-radius: 0px 10px 10px 0px;
 }
 
@@ -148,27 +144,72 @@ button
 /*Zone filtres*/ /*a faire*/
 
 .filtres
-{
-    border : 2px solid black;
+{   margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
 
+.filtres h2, .rechercheParFiltre
+{
+    margin-right: 40px;
+}
+
+.rechercheParFiltre
+{
+    display: flex;
+}
+
+.iconeFiltres
+{
+    background-color: #DEEBFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+}
+
+.iconeFiltres i
+{
+    color: #0065fc;
+    margin: auto;
+}
+
+.filtreFormulaire input
+{
+    width: 100px;
+    height: 33px;
+    border: solid 3px #f2f2f2;
+    border-radius: 20px;
+    font-weight: bold;
+    padding-left: 40px;
+    display: flex;
+}
+
+.informationComplementaire
+{
+    margin-bottom: 60px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
-.filtres ul
+.logoInfo
 {
-    border : 2px solid black;
-    width: 500px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    height: 25px;
+    width: 25px;
+    border: solid 1px #f2f2f2;
+    border-radius: 50%;
 }
 
-.filtres li
+.logoInfo i
 {
-    border : 2px solid black;
+    margin: auto;
+    color: #0065FC;
 }
 
 /*Zone filtres*/
@@ -184,6 +225,7 @@ button
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 70px;
 }
 
 /* fonction de l'article*/
@@ -199,7 +241,6 @@ article
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 article h2, article h3
@@ -210,6 +251,9 @@ article h2, article h3
 
 .vignetteHebergements
 {
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #f2f2f2;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     width: 350px;
@@ -294,6 +338,9 @@ aside
 
 .vignettePopulaires
 {
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #f2f2f2;
     display: flex;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
@@ -344,7 +391,7 @@ aside
     justify-content: flex-end;
 }
 
-.noteEtoiles a 
+.noteEtoiles a
 {
     color: #f2f2f2;
     text-decoration: none;
@@ -368,7 +415,6 @@ aside
 
 #container
 {
-    border: 1px solid red;
     height: 500px;
     background-color:white;
     display: flex;
@@ -378,62 +424,86 @@ aside
     align-content: space-between;
 }
 
-.vignetteActivitesVieuxPort
+.vignetteActivitesVieuxPort, .vignetteActivitesParcCalanques
 {
-    border: 1px solid green;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #f2f2f2;
     width: 20%;
     height: 100%;
 }
 
-.vignetteActivitesFortPomegues
+.vignetteActivitesFortPomegues, .vignetteActivitesNotreDame
 {
-    border: 1px solid green;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #f2f2f2;
     width: 20%;
     height: 50%;
 }
 
-.vignetteActivitesIlesFrioul
+.vignetteActivitesIlesFrioul, .vignetteActivitésParcLongchamp
 {
-    border: 1px solid green;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #f2f2f2;
     width: 20%;
-    height: 40%;
+    height: 45%;
 }
 
-.vignetteActivitesParcCalanques
+.vignetteActivitesVieuxPort img, .vignetteActivitesParcCalanques img
 {
-    border: 1px solid green;
-    width: 20%;
-    height: 100%;
-}
-
-.vignetteActivitesNotreDame
-{
-    border: 1px solid green;
-    width: 20%;
-    height: 50%;
-}
-
-.vignetteActivitésParcLongchamp
-{
-    border: 1px solid green;
-    width: 20%;
-    height: 40%;
-}
-
-.vignetteActivitesVieuxPort img, .vignetteActivitesFortPomegues img, .vignetteActivitesIlesFrioul img,
-.vignetteActivitesParcCalanques img, .vignetteActivitesNotreDame img, .vignetteActivitésParcLongchamp img
-{
+    border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 85%;
 }
 
+ .vignetteActivitesFortPomegues img, .vignetteActivitesIlesFrioul img,
+ .vignetteActivitesNotreDame img, .vignetteActivitésParcLongchamp img
+{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 80%;
+}
+
 .texteSousPhoto
 {
-    margin: auto;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 /* =================================================  Section bas  ================================================= */
 
 /* =================================================    footer     ================================================= */
+footer
+{
+    background-color: #f2f2f2;
+    margin-top: 50px;
+    height: 200px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.aProposColonne1, .nosHebergementsColonne2, .assistanceColonne3
+{
+    width: 500px;
+}
+
+footer h3
+{
+    margin-left: 40px;
+    font-size: 1.3em;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: black;
+    
+}
+
 /* =================================================    footer     ================================================= */
 
 

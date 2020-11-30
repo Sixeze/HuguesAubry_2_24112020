@@ -16,8 +16,8 @@
                 <img id="logo" src="images/logo/Reservia@3x.png" alt="logo reservia" />
                 <nav>
                     <ul>
-                        <li><a href="#">hébergements</a></li>
-                        <li><a href="#">Activités</a></li>
+                        <li><a href="#ancre1">hébergements</a></li>
+                        <li><a href="#ancre2">Activités</a></li>
                         <li><a id="inscrire" href="#">S'inscrire</a></li>
                     </ul>
                 </nav>
@@ -37,20 +37,43 @@
                 </div>
                 <div class="filtres">
                     <h2>Filtres</h2>
-                    <ul>
-                        <li><i class="fas fa-money-bill-wave">Economique</i></li>
-                        <li><i class="fas fa-child"></i>Famillial</li>
-                        <li><i class="fas fa-heart"></i>Romantique</li>
-                        <li><i class="fas fa-dog"></i>animaux autorisés</li>
-                    </ul>
+                    <div class="rechercheParFiltre">
+                        <span class="iconeFiltres"><i class="fas fa-money-bill-wave"></i></span>
+                        <form class="filtreFormulaire Economique" method="POST" action="economique.php">
+                            <input type="text" name="Economique" value="  Economique">
+                        </form>
+                    </div>
+                    <div class="rechercheParFiltre">
+                        <span class="iconeFiltres"><i class="fas fa-child"></i></span>
+                        <form class="filtreFormulaire Famillial" method="POST" action="Famillial.php">
+                            <input type="text" name="Famillial" value="  Famillial">
+                        </form>
+                    </div>
+                    <div class="rechercheParFiltre">
+                        <span class="iconeFiltres"><i class="fas fa-heart"></i></span>
+                        <form class="filtreFormulaire Romantique" method="POST" action="Romantique.php">
+                            <input type="text" name="Romantique" value="  Romantique">
+                        </form>
+                    </div>
+                    <div class="rechercheParFiltre">
+                        <span class="iconeFiltres"><i class="fas fa-dog"></i></span>
+                        <form class="filtreFormulaire Animaux" method="POST" action="Animaux.php">
+                            <input type="text" name="Animaux" value="  Animaux">
+                        </form>
+                    </div>
                 </div>
+                <div class="informationComplementaire">
+                    <span class="logoInfo"><i class="fas fa-info"></i></span>
+                    <p>Plus de 500 logements sont disponibles dans cette ville.</p>
+                </div>
+
             </section>
             <!--Section1 "trouver ses vacances de rêve -->
 
             <!--section2 "les hébergements"-->
             <section class="section2">
                 <article>
-                    <h2>Hébergements à Marseille</h2>
+                    <h2 id="ancre1">Hébergements à Marseille</h2>
                     <div class="vignetteHebergements"><a href="Auberge de la Cannebière"><img src="images/Hebergements/chambreFer_S.jpg" alt="chambrefer" /></a>
                         <div class="vignetteHebergementsTxt">
                             <h3>Auberge de la Cannebière</h3>
@@ -185,64 +208,64 @@
 
             <!--section3 "les activités"-->
             <section>
-                <h2 class="titreActivites">Activités à Marseille</h2>
+                <h2 class="titreActivites" id="ancre2">Activités à Marseille</h2>
                 <div id="container">
                     <div class="vignetteActivitesVieuxPort">
-                        <a href="Vieux port"><img src="images/Activites/bateaux_M.jpg" alt="Vieux Port" /></a>
+                        <a href="Vieux port"><img src="images/Activites/bateauxResize_S.png" alt="Vieux Port" /></a>
                         <h3 class="texteSousPhoto">Vieux Port</h3>
                     </div>
                     <div class="vignetteActivitesFortPomegues">
-                        <a href="Fort de Pomègues"><img src="images/Activites/bunker_M.jpg" alt="Fort de Pomègues" /></a>
+                        <a href="Fort de Pomègues"><img src="images/Activites/bunkerResize_S.png" alt="Fort de Pomègues" /></a>
                         <h3 class="texteSousPhoto">Fort de Pomègues</h3>
                     </div>
                     <div class="vignetteActivitesIlesFrioul">
-                        <a href="Îles du Frioul"><img src="images/Activites/longueVue_M.jpg" alt="Îles du Frioul" /></a>
+                        <a href="Îles du Frioul"><img src="images/Activites/longueVueResize_S.png" alt="Îles du Frioul" /></a>
                         <h3 class="texteSousPhoto">Îles du Frioul</h3>
                     </div>
                     <div class="vignetteActivitesParcCalanques">
-                        <a href="Parc National des Calanques"><img src="images/Activites/calanque_M.jpg" alt="Parc National des Calanques" /></a>
+                        <a href="Parc National des Calanques"><img src="images/Activites/calanqueResize_S.png" alt="Parc National des Calanques" /></a>
                         <h3 class="texteSousPhoto">Parc National des Calanques</h3>
                     </div>
                     <div class="vignetteActivitesNotreDame">
-                        <a href="Notre Dame de la Garde"><img src="images/Activites/basiliqueColline_M.jpg" alt="Notre Dame de la Garde" /></a>
+                        <a href="Notre Dame de la Garde"><img src="images/Activites/basiliqueColline_S.jpg" alt="Notre Dame de la Garde" /></a>
                         <h3 class="texteSousPhoto">Notre Dame de la Garde</h3>
                     </div>
                     <div class="vignetteActivitésParcLongchamp">
-                        <a href="Parc Longchamp"><img src="images/Activites/fontaine_M.jpg" alt="Parc Longchamp" /></a>
+                        <a href="Parc Longchamp"><img src="images/Activites/fontaineResize_S.png" alt="Parc Longchamp" /></a>
                         <h3 class="texteSousPhoto">Parc Longchamp</h3>
                     </div>
                 </div>
             </section>
             <!--section3 "les activités"-->
-
+        </div>
 
             <!--le pied de page-->
             <footer>
-                <div class="aPropos">
+                <div class="aProposColonne1">
                     <h3>A propos</h3>
                     <ul>
-                        <li>fonctionnement du site</li>
-                        <li>conditions générales de vente</li>
-                        <li>données de confidentialité</li>
+                        <li><a href="fonctionnement du site">fonctionnement du site</a></li><br />
+                        <li><a href="conditions générales de vente">conditions générales de vente</a></li><br />
+                        <li><a href="données de confidentialité">données de confidentialité</a></li>
                     </ul>
                 </div>
 
-                <div class="nosHebergement">
+                <div class="nosHebergementsColonne2">
                     <h3>Nos Hébergements</h3>
                     <ul>
-                        <li>Chartre qualité</li>
-                        <li>Soumettre votre hôtel</li>
+                        <li><a href="Chartre qualité">Chartre qualité</a></li><br />
+                        <li><a href="Soumettre votre hôtel">Soumettre votre hôtel</a></li>
                     </ul>
                 </div>
-                <div class="assitance">
+                <div class="assistanceColonne3">
                     <h3>Assistance</h3>
                     <ul>
-                        <li>Centre d'aide</li>
-                        <li>Nous contacter</li>
+                        <li><a href="Centre d'aide">Centre d'aide</a></li><br />
+                        <li><a href="mailto:Nous-contacter@nouscontacter.com">Nous contacter</a></li>
                     </ul>
-            </div>
-        </footer>
-        <!--le pied de page-->
-        </div>
+                </div>
+            </footer>
+            <!--le pied de page-->
+        
     </body>
-    </html>
+</html>
