@@ -11,9 +11,9 @@
     font-style: normal;
 
 }
-                                                /*police d'écriture*/
+ /*police d'écriture*/
 
-                                                    /*général*/
+/*général*/
 
 
 
@@ -26,6 +26,7 @@ body
 {
  width: 95%;
  margin: auto;
+ margin-bottom: 20px;
 }
 
 h1, h2, h3
@@ -37,78 +38,189 @@ ul
     list-style-type: none;
 }
 
-                                                    /*général*/
+ /*général*/
 
 /* =================================================     Header    ================================================= */
+/*@media screen and (min-width: 1600px)*/
 header /*block header*/
 {
     width: 100%;
     height: 100px;
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row ;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
 }
 
 #logo /*logo*/
 {
+    border: 1px solid red;
     width: 100px;
-    height: 50px;
+    height: 45%;
 }
 
 nav
 {
     width: 500px;
-    height: 150px;
+    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
 }
 
 nav ul
 {
+    width: 400px;
     color:black;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: baseline;
+    align-items:flex-start;
 }
 
-nav a
-{
+
+
+
+li a
+{ 
     color:black;
     font-size: 0.9em;
     margin-top: 40px;
     text-decoration: none;
 }
 
-nav a:hover
+
+
+
+li a:hover
 {
+    
     color: #0065FC;
     border-top: 3px solid #0065FC;
     padding-top: 40px;
 }
 
-nav #inscrire
+.inscrire
 {
+    margin-top: 16px;
+}
+
+.inscrire a
+{
+   
     color:#0065FC;
     font-size: 1.1em;
+    text-decoration: none;
+    text-decoration-line: none;
     font-weight: bolder;
 }
 
-nav #inscrire:hover
+.inscrire a:hover
 {
     color: #0065FC;
-    border-top: none;
+    
 }
+/*@media screen and (min-width: 1600px)*/
+
+
+/*@media screen and (max-width: 580px)*/
+
+@media screen and (max-width: 480px)
+{
+    header
+    {
+        border: 1px solid black;
+        width: 100%;
+        height: 200px;
+
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        margin-bottom: 100px;
+
+    }
+
+    #logo /*logo*/
+    {
+        width: 100px;
+        height: 45px;
+    }
+
+    nav
+    {
+        width: 100%;
+
+        border: 1px solid yellow;
+    }
+    nav ul
+    {
+
+
+        color:black;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+
+        border: 2px solid green;
+        width: 100%;
+        height: 40px;
+        padding-left: -100px;
+    }
+
+    nav li
+    {
+        margin-left: -40px;
+        border: 1px solid red;
+        width: 240px;
+        height: 50px;
+    }
+
+    nav a
+    {
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 10px;
+    }
+
+    nav a:hover
+    {
+
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 10px;
+        padding-top: none;
+    }
+
+    #inscrire
+    {
+        display:none;
+    }
+}
+/*@media screen and (max-width: 580px)*/
+
 /* =================================================     Header    ================================================= */
 
 
 /* ================================================= Section haute ================================================= */
-/*Zone recherche*//* a finir !!! */
 
+/*Zone recherche*/
+
+/*@media screen and (min-width: 1600px)*/
 #barreRecherche
 {
     display: flex;
-    
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .logorecherche
@@ -138,13 +250,31 @@ button
     height: 40px;
     border-radius: 0px 10px 10px 0px;
 }
+/*@media screen and (min-width: 1600px)*/
+
+
+/*@media screen and (max-width: 480px)*/
+@media screen and (max-width: 480px)
+{
+
+    #barreRecherche
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+/*@media screen and (max-width: 480px)*/
 
 /*Zone recherche*/
 
-/*Zone filtres*/ /*a faire*/
+/*Zone filtres*/
+
+/*@media screen and (min-width: 1600px)*/
 
 .filtres
-{   margin-bottom: 10px;
+{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -179,7 +309,7 @@ button
 
 .filtreFormulaire input
 {
-    width: 100px;
+    width: 140px;
     height: 33px;
     border: solid 3px #f2f2f2;
     border-radius: 20px;
@@ -211,6 +341,32 @@ button
     margin: auto;
     color: #0065FC;
 }
+/*@media screen and (min-width: 1600px)*/
+
+/*@media screen and (max-width: 480px)*/
+@media screen and (max-width: 480px)
+{
+    .filtres
+    {
+        height: 250px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .filtres h2
+    {
+            margin-bottom: 5px;
+    }
+
+    .informationComplementaire
+    {
+        margin-bottom: 20px;
+    }
+}
+/* @media screen and (max-width: 480px)*/
 
 /*Zone filtres*/
 
@@ -220,7 +376,9 @@ button
 
 /* =================================================  Section Mid  ================================================= */
 
-.section2 /* fonction général de la section1*/
+/*@media screen and (min-width: 1600px)*/
+
+.section2 /* fonction général de la section2*/
 {
     display: flex;
     flex-direction: row;
@@ -256,16 +414,16 @@ article h2, article h3
     box-shadow: 5px 5px 5px #f2f2f2;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    width: 350px;
+    width: 30%;
     height: 300px;
 }
 
 .vignetteHebergements img
 {
     object-fit: cover;
-    margin: 5px;
+    padding: 2%;
     border-radius: 20px 20px 0px 0px;
-    width: 340px;
+    width: 96%;
     height: 200px;
 }
 
@@ -278,6 +436,7 @@ article h2, article h3
 .vignetteHebergementsTxt h3
 {
     font-size: 1.2em;
+    font-weight: bolder;
     margin-left: 5px;
     margin-top: 0px;
     margin-bottom: 1px;
@@ -286,6 +445,7 @@ article h2, article h3
 .vignetteHebergementsTxt p
 {
     font-size: 0.9em;
+    font-weight: bold;
     margin-left: 5px;
     margin-top: 0px;
 }
@@ -297,7 +457,6 @@ article h2, article h3
 }
 
 /*fonction de l'article */
-
 
 /*fonction du aside*/
 
@@ -316,7 +475,7 @@ aside
 
 .asideTitre
 {
-   width: 400px;
+   width: 90%;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -344,7 +503,7 @@ aside
     display: flex;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    width: 400px;
+    width: 90%;
     height: 160px;
 }
 
@@ -352,9 +511,9 @@ aside
 {
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
-    width: 160px;
+    width: 170px;
     height: 150px;
-    padding: 5px;
+    padding: 2%;
 }
 
 .vignettePopulairesTxt
@@ -371,15 +530,83 @@ aside
 
 .vignettePopulairesTxt p
 {
+    font-weight: bold;
     font-size: 0.9em;
     margin-top: 0px;
 }
 
+
 .noteEtoiles
 {
     margin-top: auto;
+    margin-bottom: 10px;
 }
 /*fonction du aside*/
+
+/*@media screen and (min-width: 1600px)*/
+
+/*@media screen and (max-width: 480px)*/
+
+@media screen and (max-width: 480px)
+{
+    .section2 /* fonction général de la section2 ecran 480*/
+    {
+        height: 2650px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    /* fonction de l'article ecran 480*/
+
+    article
+    {
+        border: 1px solid white;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+     .vignetteHebergements
+    {
+        box-shadow: 8px 8px 8px #f2f2f2;
+        width: 97%;
+        margin-bottom: 15px;
+    }
+
+    .vignetteHebergementsTxt, .noteEtoiles
+    {
+        margin-left: 15px;
+    }
+
+    /*fonction de l'article ecran 480*/
+
+    /*fonction du aside ecran 480*/
+
+    aside
+    {
+            width: 100%;
+            height: 620px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+    }
+
+    .asideTitre, .vignettePopulaires
+    {
+    margin-bottom: 15px;
+    }
+
+
+    /*fonction du aside ecran 480*/
+}
+
+/*@media screen and (max-width: 480px)*/
 
 /* css de la class noteEtoiles*/
 
@@ -413,8 +640,11 @@ aside
 
 /* =================================================  Section bas  ================================================= */
 
+/*@media screen and (min-width: 1600px)*/
+
 #container
 {
+    width: 100%;
     height: 500px;
     background-color:white;
     display: flex;
@@ -471,9 +701,57 @@ aside
     margin-top: 10px;
     margin-left: 5px;
 }
+
+/*@media screen and (min-width: 1600px)*/
+
+/*@media screen and (max-width: 480px)*/
+
+@media screen and (max-width: 480px)
+{
+    #container
+    {
+        width: 100%;
+        height: 2000px;
+        background-color:white;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .vignetteActivitesVieuxPort, .vignetteActivitesParcCalanques, 
+    .vignetteActivitesFortPomegues, .vignetteActivitesNotreDame,
+    .vignetteActivitesIlesFrioul, .vignetteActivitésParcLongchamp
+    {
+        box-shadow: 8px 8px 8px #f2f2f2;
+        width: 100%;
+        height: 300px;
+    }
+
+    .vignetteActivitesVieuxPort img, .vignetteActivitesParcCalanques img,
+    .vignetteActivitesFortPomegues img, .vignetteActivitesIlesFrioul img,
+    .vignetteActivitesNotreDame img, .vignetteActivitésParcLongchamp img
+    {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 80%;
+    }
+
+    .texteSousPhoto
+    {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+}
+
+/*@media screen and (max-width: 480px)*/
+
 /* =================================================  Section bas  ================================================= */
 
 /* =================================================    footer     ================================================= */
+
+/*@media screen and (min-width: 1600px)*/
+
 footer
 {
     background-color: #f2f2f2;
@@ -501,8 +779,34 @@ footer a
 {
     text-decoration: none;
     color: black;
-    
 }
+
+/*@media screen and (min-width: 1600px)*/
+
+/*@media screen and (max-width: 480px)*/
+
+@media screen and (max-width: 480px)
+{
+    footer
+    {
+        margin-top: 30px;
+        height: 500px;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    footer h3
+    {
+        margin-left: 40px;
+        font-size: 1.3em;
+    }
+
+}
+
+/*@media screen and (max-width: 480px)*/
 
 /* =================================================    footer     ================================================= */
 
