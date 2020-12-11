@@ -26,7 +26,7 @@ body
 {
  width: 95%;
  margin: auto;
- margin-bottom: 20px;
+ 
 }
 
 h1, h2, h3
@@ -36,6 +36,18 @@ h1, h2, h3
 ul
 {
     list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+a:hover
+{
+    color: white;
 }
 
  /*général*/
@@ -122,25 +134,30 @@ header /*block header*/
 /*@media screen and (min-width: 1600px)*/
 
 
-/*@media screen and (max-width: 580px)*/
+/*@media all and (max-device-width: 480px)*/
 
-@media screen and (max-width: 580px)
+@media all and (max-device-width: 480px)
 {
-    header
+    #bloc_page
     {
         width: 100%;
+    }
+    header
+    {
+        width: 480px;
         height: 200px;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-bottom: 20px;
-
+        margin-bottom: none;
     }
+
     header :nth-child(2) { order: 3; }
 
     #logo /*logo*/
     {
-        width: 100px;
-        height: 45px;
+        width: 140px;
+        height: 60px;
+        margin-left: 10px;
     }
 
     .navigation
@@ -164,11 +181,12 @@ header /*block header*/
 
     .liHebergements a, .liActivites a
     {
-        width: 240px;
+        width: 245px;
         display: flex;
         justify-content: center;
         border-bottom: 3px solid grey;
         padding-bottom: 10px;
+        font-size: 1.1em;
     }
 
     .liHebergements a
@@ -178,7 +196,6 @@ header /*block header*/
 
     .liHebergements a:hover, .liActivites a:hover
     {
-
         color: #0065FC;
         border-top: none;
         border-bottom: 3px solid #0065FC;
@@ -192,11 +209,11 @@ header /*block header*/
 
     .inscrire
     {
-        font-size: 1.3em;
+        font-size: 1.4em;
         font-weight: bolder;
     }
 }
-/*@media screen and (max-width: 580px)*/
+/*@media all and (max-device-width: 480px)*/
 
 /* =================================================     Header    ================================================= */
 
@@ -225,6 +242,8 @@ header /*block header*/
 .logorecherche i
 {
     margin: auto;
+    width: auto;
+    height: auto;
 }
 
 #search
@@ -243,9 +262,37 @@ button
 /*@media screen and (min-width: 1600px)*/
 
 
-/*@media screen and (max-width: 580px)*/
-@media screen and (max-width: 580px)
+/*@media all and (max-device-width: 480px)*/
+@media all and (max-device-width: 480px)
 {
+    #sectionRecherche
+    {
+        border: 1px solid red;
+
+        width: 480px;
+        height: 500px;
+        margin-bottom: 40px; /*penser a la réequilibrer une fois que les filtres populaire de l'aside seront agencé. */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+
+    #sectionRecherche h1
+    {
+        width: 450px;
+        align-self: center;
+        font-size: 2em;
+    }
+
+    #sectionRecherche h4
+    {
+        border: 1px solid black;
+        width: 450px;
+        align-self: center;
+        font-size: 1.1em;
+        margin-top: auto;
+    }
 
     #barreRecherche
     {
@@ -253,9 +300,26 @@ button
         flex-direction: row;
         justify-content: center;
     }
+    .logorecherche
+    {
+        background-color: #f2f2f2;
+        height: 40px;
+        width: 40px;
+        border-radius:  10px 0px 0px 10px;
+        display: flex;
+    }
+
+        button
+    {
+        background-color: #0065FC;
+        color: white;
+        width: 150px;
+        height: 40px;
+        border-radius: 0px 10px 10px 0px;
+    }
 
 }
-/*@media screen and (max-width: 480px)*/
+/*@media all and (max-device-width: 480px)*/
 
 /*Zone recherche*/
 
@@ -333,30 +397,35 @@ button
 }
 /*@media screen and (min-width: 1600px)*/
 
-/*@media screen and (max-width: 580px)*/
-@media screen and (max-width: 580px)
+/*@media all and (max-device-width: 480px)*/
+@media all and (max-device-width: 480px)
 {
     .filtres
     {
-        height: 250px;
+        height: 150px;
         width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         align-items: baseline;
     }
 
     .filtres h2
     {
             margin-bottom: 5px;
+            border: 1px solid red;
+            width: 300px;
     }
+
+   
 
     .informationComplementaire
     {
         margin-bottom: 20px;
     }
 }
-/* @media screen and (max-width: 480px)*/
+/*@media all and (max-device-width: 480px)*/
 
 /*Zone filtres*/
 
@@ -533,18 +602,37 @@ aside
 }
 /*fonction du aside*/
 
+/* lien afficher plus*/
+
+h3 a 
+{
+    color: black;
+}
+
+h3 a:hover
+{
+    color: black;
+}
+
+/* lien afficher plus*/
+
+
+
 /*@media screen and (min-width: 1600px)*/
 
-/*@media screen and (max-width: 580px)*/
+/*@media all and (max-device-width: 480px)*/
 
-@media screen and (max-width: 580px)
+@media all and (max-device-width: 480px)
 {
     .section2 /* fonction général de la section2 ecran 480*/
     {
-        height: 2650px;
+        border: 1px solid red;
+       
+        width: 480px;
+        height: 2800px;
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     /* fonction de l'article ecran 480*/
@@ -553,7 +641,7 @@ aside
     {
         border: 1px solid white;
         background-color: white;
-        width: 100%;
+        width: auto;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
@@ -564,8 +652,18 @@ aside
      .vignetteHebergements
     {
         box-shadow: 8px 8px 8px #f2f2f2;
-        width: 97%;
-        margin-bottom: 15px;
+        border-radius: 30px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .vignetteHebergements img
+    {
+        object-fit: cover;
+        padding: 0%;
+        border-radius: 30px 30px 0px 0px;
+        width: 100%;
+        height: 200px;
     }
 
     .vignetteHebergementsTxt, .noteEtoiles
@@ -579,12 +677,13 @@ aside
 
     aside
     {
-            width: 100%;
+            width: 475px;
             height: 620px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+            border-radius: 0px 0px 0px 0px;
     }
 
     .asideTitre, .vignettePopulaires
@@ -596,7 +695,7 @@ aside
     /*fonction du aside ecran 480*/
 }
 
-/*@media screen and (max-width: 480px)*/
+/*@media all and (max-device-width: 480px)*/
 
 /* css de la class noteEtoiles*/
 
@@ -694,13 +793,13 @@ aside
 
 /*@media screen and (min-width: 1600px)*/
 
-/*@media screen and (max-width: 580px)*/
+/*@media all and (max-device-width: 480px)*/
 
-@media screen and (max-width: 580px)
+@media all and (max-device-width: 480px)
 {
     #container
     {
-        width: 100%;
+        width: 480px;
         height: 2000px;
         background-color:white;
         display: flex;
@@ -734,7 +833,7 @@ aside
     }
 }
 
-/*@media screen and (max-width: 480px)*/
+/*@media all and (max-device-width: 480px)*/
 
 /* =================================================  Section bas  ================================================= */
 
@@ -773,13 +872,14 @@ footer a
 
 /*@media screen and (min-width: 1600px)*/
 
-/*@media screen and (max-width: 580px)*/
+/*@media all and (max-device-width: 480px)*/
 
-@media screen and (max-width: 580px)
+@media all and (max-device-width: 480px)
 {
     footer
     {
         margin-top: 30px;
+        width: 480px;
         height: 500px;
 
         display: flex;
@@ -791,12 +891,12 @@ footer a
     footer h3
     {
         margin-left: 40px;
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
 }
 
-/*@media screen and (max-width: 580px)*/
+/*@media all and (max-device-width: 480px)*/
 
 /* =================================================    footer     ================================================= */
 
