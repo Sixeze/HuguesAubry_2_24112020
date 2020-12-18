@@ -5,166 +5,155 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>P2_Projet_Reservia</title>
         <meta name="viewport" content="width=device-width">
-        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='style2.css'>
         <script src="https://kit.fontawesome.com/ff7c69c40e.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <div id="bloc_page">
-            <!--L'en tête-->
-
+        <div class="block_page">
             <header>
-                <img id="logo" src="images/logo/Reservia@3x.png" alt="logo reservia" />
+                <img class="logo" src="images/logo/Reservia@3x.png" alt="logo reservia" />
                 <nav class="navigation">
                     <ul>
-                        <li class="liHebergements"><a href="#ancre1">Hébergements</a></li>
-                        <li class="liActivites"><a href="#ancre2">Activités</a></li>
+                        <li class="liLodging"><a href="#anchor1">Hébergements</a></li>
+                        <li class="liActivities"><a href="#anchor2">Activités</a></li>
                     </ul>
                 </nav>
-                <span class="inscrire"><a href="#">S'inscrire</a></span>
+                <span class="register"><a href="#">S'inscrire</a></span>
             </header>
 
-            <!--L'en tête-->
-
-            <!--Section1 "trouver ses vacances de rêve -->
-            <section id="sectionRecherche">
+            <!--top section -->
+            <section class="topSection">
                 <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                 <h4>En plein centre ville ou en pleine nature</h4>
-                <div class="recherche">
+                <div class="blockFinder">
                     <form  method="POST" action="reference.php">
-                        <p id="barreRecherche"><label for="search"><span class="logorecherche"><i class="fas fa-map-marker-alt"></i></span></label>
-                        <input type="search" id="search" value="Marseille, France"  />
+                        <p class="finder"><label for="search"><span class="logoMapMarker"><i class="fas fa-map-marker-alt"></i></span></label>
+                        <input class="search" type="search" id="search" value="Marseille, France"  />
                         <button><a href="pageClick.html">Rechercher</a></button></p>  <!--a href="pageClick.html" est la page vide de destination des lien clickable du projet-->
                     </form>
                 </div>
-
-
-                <!-- bouton recherché pour @media all and (max-device-width: 480px) -->
-                <div class="recherche480">
+            <!-- search button for @media all and (max-device-width: 480px) -->
+                <div class="blockFinder480">
                     <form  method="POST" action="reference.php">
-                        <p id="barreRecherche480"><label for="search"><span class="logorecherche480"><i class="fas fa-map-marker-alt fa-2x"></i></span></label>
+                        <p class="finder480"><label for="search"><span class="logoMapMarker480"><i class="fas fa-map-marker-alt fa-2x"></i></span></label>
                         <input class="search480" type="search" id="search" value="Marseille, France"  />
                         <button class="loupe480"><a href="pageClick.html"><i class="fas fa-search fa-2x"></i></a></button></p>  <!--a href="pageClick.html" est la page vide de destination des lien clickable du projet-->
                     </form>
                 </div>
-
-                <!-- bouton recherché pour @media all and (max-device-width: 480px) -->
-
-
-                <div class="filtres">
+            <!-- search button for @media all and (max-device-width: 480px) -->
+                <div class="filter">
                     <h2>Filtres</h2>
-                    <div class="rechercheParFiltre">
-                        <span class="iconeFiltres"><i class="fas fa-money-bill-wave"></i></span>
-                        <form class="filtreFormulaire Economique" method="POST" action="economique.php">
+                    <div class="researchFilter">
+                        <span class="filterIcon"><i class="fas fa-money-bill-wave"></i></span>
+                        <form class="formFilter Economique" method="POST" action="economique.php">
                             <input type="text" name="Economique" value="  Economique">
                         </form>
                     </div>
-                    <div class="rechercheParFiltre">
-                        <span class="iconeFiltres"><i class="fas fa-child"></i></span>
-                        <form class="filtreFormulaire Famillial" method="POST" action="Famillial.php">
+                    <div class="researchFilter">
+                        <span class="filterIcon"><i class="fas fa-child"></i></span>
+                        <form class="formFilter Famillial" method="POST" action="Famillial.php">
                             <input type="text" name="Famillial" value="  Famillial">
                         </form>
                     </div>
-                    <div class="rechercheParFiltre">
-                        <span class="iconeFiltres"><i class="fas fa-heart"></i></span>
-                        <form class="filtreFormulaire Romantique" method="POST" action="Romantique.php">
+                    <div class="researchFilter">
+                        <span class="filterIcon"><i class="fas fa-heart"></i></span>
+                        <form class="formFilter Romantique" method="POST" action="Romantique.php">
                             <input type="text" name="Romantique" value="  Romantique">
                         </form>
                     </div>
-                    <div class="rechercheParFiltre">
-                        <span class="iconeFiltres"><i class="fas fa-dog"></i></span>
-                        <form class="filtreFormulaire Animaux" method="POST" action="Animaux.php">
+                    <div class="researchFilter">
+                        <span class="filterIcon"><i class="fas fa-dog"></i></span>
+                        <form class="formFilter Animaux" method="POST" action="Animaux.php">
                             <input type="text" name="Animaux" value="  Animaux autorisés">
                         </form>
                     </div>
                 </div>
-                <div class="informationComplementaire">
+                <div class="addInformation">
                     <span class="logoInfo"><i class="fas fa-info"></i></span>
                     <p>Plus de 500 logements sont disponibles dans cette ville.</p>
                 </div>
-
             </section>
-            <!--Section1 "trouver ses vacances de rêve -->
-
-            <!--section2 "les hébergements"-->
-            <section class="section2">
+            <!--top section -->
+            <!--mid section-->
+            <section class="midSection">
                 <article>
                     <h2 id="ancre1">Hébergements à Marseille</h2>
-                    <div class="vignetteHebergements"><a href="pageClick.html"><img src="images/Hebergements/chambreFer_M.jpg" alt="chambrefer" /></a>
-                        <div class="vignetteHebergementsTxt">
+                    <div class="lodgingCards"><a href="pageClick.html"><img src="images/Hebergements/chambreFer_M.jpg" alt="chambrefer" /></a>
+                        <div class="lodgingCardsTxt">
                             <h3>Auberge de la Cannebière</h3>
                             <p>nuit à partir de 25€</p>
-                            <div class="evalEtoiles">
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star"></i>
+                            <div class="rating">
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="vignetteHebergements"><a href="pageClick.html"><img src="images/Hebergements/chambreGrise_M.jpg" alt="chambreGrise" /></a>
-                        <div class="vignetteHebergementsTxt">
+                    <div class="lodgingCards"><a href="pageClick.html"><img src="images/Hebergements/chambreGrise_M.jpg" alt="chambreGrise" /></a>
+                        <div class="lodgingCardsTxt">
                             <h3>Hôtel du port</h3>
                             <p>nuit à partir de 52€</p>
-                            <div class="evalEtoiles">
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
+                            <div class="rating">
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="vignetteHebergements"><a href="pageClick.html"><img src="images/Hebergements/chambreMirroir_M.jpg" alt="chambreGrise" /></a>
-                        <div class="vignetteHebergementsTxt">
+                    <div class="lodgingCards"><a href="pageClick.html"><img src="images/Hebergements/chambreMirroir_M.jpg" alt="chambreGrise" /></a>
+                        <div class="lodgingCardsTxt">
                             <h3>Hôtel les mouettes</h3>
                             <p>nuit à partir de 76€</p>
-                            <div class="evalEtoiles">
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star"></i>
+                            <div class="rating">
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="vignetteHebergements"><a href="pageClick.html"><img src="images/Hebergements/chambreBlue_M.jpg" alt="chambreBlue" /></a>
-                        <div class="vignetteHebergementsTxt">
+                    <div class="lodgingCards"><a href="pageClick.html"><img src="images/Hebergements/chambreBlue_M.jpg" alt="chambreBlue" /></a>
+                        <div class="lodgingCardsTxt">
                             <h3>Hôtel de la mer</h3>
                             <p>nuit à partir de 46€</p>
-                            <div class="evalEtoiles">
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star"></i>
-                                <i class="evalStar fa fa-star"></i>
+                            <div class="rating">
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star"></i>
+                                <i class="ratingStars fa fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="vignetteHebergements"><a href="pageClick.html"><img src="images/Hebergements/chambreBois_M.jpg" alt="chambreBois" /></a>
-                        <div class="vignetteHebergementsTxt">
+                    <div class="lodgingCards"><a href="pageClick.html"><img src="images/Hebergements/chambreBois_M.jpg" alt="chambreBois" /></a>
+                        <div class="lodgingCardsTxt">
                             <h3>Auberge le panier</h3>
                             <p>nuit à partir de 23€</p>
-                            <div class="evalEtoiles">
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star"></i>
+                            <div class="rating">
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="vignetteHebergements"><a href="pageClick.html"><img src="images/Hebergements/chambreBlanche_M.jpg" alt="chambreBlanche" /></a>
-                        <div class="vignetteHebergementsTxt">
+                    <div class="lodgingCards"><a href="pageClick.html"><img src="images/Hebergements/chambreBlanche_M.jpg" alt="chambreBlanche" /></a>
+                        <div class="lodgingCardsTxt">
                             <h3>Hôtel chez Amina</h3>
                             <p>nuit à partir de 96€</p>
-                            <div class="evalEtoiles">
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
-                                <i class="evalStar fa fa-star blue"></i>
+                            <div class="rating">
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
                             </div>
                         </div>
                     </div>
@@ -181,12 +170,12 @@
                         <div class="vignettePopulairesTxt">
                             <h3>Hôtel le soleil du matin</h3>
                             <p>nuit à partir de 128€</p>
-                            <div class="noteEtoiles">
-                                <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
-                                --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
-                                --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
-                                --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
-                                --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                            <div class="rating">
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
                             </div>
                         </div>
                     </div>
@@ -195,12 +184,12 @@
                         <div class="vignettePopulairesTxt">
                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                             <p>nuit à partir de 71€</p>
-                            <div class="noteEtoiles">
-                                <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
-                                --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
-                                --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
-                                --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
-                                --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                            <div class="rating">
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star"></i>
                             </div>
                         </div>
                     </div>
@@ -209,21 +198,19 @@
                         <div class="vignettePopulairesTxt">
                             <h3>Hôtel Tout bleu et Blanc</h3>
                             <p>nuit à partir de 68€</p>
-                            <div class="noteEtoiles">
-                                <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a><!--
-                                --><a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a><!--
-                                --><a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a><!--
-                                --><a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a><!--
-                                --><a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+                            <div class="rating">
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star blue"></i>
+                                <i class="ratingStars fa fa-star"></i>
                             </div>
                         </div>
                     </div>
                 </aside>
             </section>
-            <!--section2 "les hébergements"-->
-
-
-            <!--section3 "les activités"-->
+            <!--mid section-->
+            <!--bottom section-->
             <section>
                 <h2 class="titreActivites" id="ancre2">Activités à Marseille</h2>
                 <div id="container">
@@ -253,35 +240,32 @@
                     </div>
                 </div>
             </section>
-            <!--section3 "les activités"-->
+            <!--bottom section-->
         </div>
+        <footer>
+            <div class="aProposColonne1">
+                <h3>A propos</h3>
+                <ul>
+                    <li><a href="pageClick.html">fonctionnement du site</a></li><br />
+                    <li><a href="pageClick.html">conditions générales de vente</a></li><br />
+                    <li><a href="pageClick.html">données de confidentialité</a></li>
+                </ul>
+            </div>
 
-            <!--le pied de page-->
-            <footer>
-                <div class="aProposColonne1">
-                    <h3>A propos</h3>
-                    <ul>
-                        <li><a href="pageClick.html">fonctionnement du site</a></li><br />
-                        <li><a href="pageClick.html">conditions générales de vente</a></li><br />
-                        <li><a href="pageClick.html">données de confidentialité</a></li>
-                    </ul>
-                </div>
-
-                <div class="nosHebergementsColonne2">
-                    <h3>Nos Hébergements</h3>
-                    <ul>
-                        <li><a href="pageClick.html">Chartre qualité</a></li><br />
-                        <li><a href="pageClick.html">Soumettre votre hôtel</a></li>
-                    </ul>
-                </div>
-                <div class="assistanceColonne3">
-                    <h3>Assistance</h3>
-                    <ul>
-                        <li><a href="pageClick.html">Centre d'aide</a></li><br />
-                        <li><a href="pageClick.html">Nous contacter</a></li>
-                    </ul>
-                </div>
-            </footer>
-            <!--le pied de page-->
+            <div class="nosHebergementsColonne2">
+                <h3>Nos Hébergements</h3>
+                <ul>
+                    <li><a href="pageClick.html">Chartre qualité</a></li><br />
+                    <li><a href="pageClick.html">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="assistanceColonne3">
+                <h3>Assistance</h3>
+                <ul>
+                    <li><a href="pageClick.html">Centre d'aide</a></li><br />
+                    <li><a href="pageClick.html">Nous contacter</a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>
