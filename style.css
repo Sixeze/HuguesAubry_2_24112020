@@ -1879,37 +1879,7 @@ a:hover
 
 /*@media all and (max-device-width: 480px)*/
 
-@media all and (max-device-width: 480px)
-{
-    footer
-    {
-        background-color: #f2f2f2;
-        margin-top: 30px;
-        width: 480px;
-        height: 500px;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: baseline;
-    }
 
-    .aProposColonne1, .nosHebergementsColonne2, .assistanceColonne3
-    {
-        width: 500px;
-    }
-
-    footer h3
-    {
-        margin-left: 40px;
-        font-size: 1.4em;
-    }
-    footer a
-    {
-        text-decoration: none;
-        color: black;
-    }
-
-}
 
 /*@media all and (max-device-width: 480px)*/
 
@@ -1917,6 +1887,162 @@ a:hover
 
 
 
+@media all and (max-device-width: 480px) {
+    .midsection {
+        border: 1px solid red;
+        width: 100%;
+        height: 2800px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+}
 
 
+article {
+    border: 1px solid white;
+    background-color: white;
+    width: auto;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
+
+ .lodgingCards
+{
+    border: 1px solid #f2f2f2;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 8px 8px 8px #f2f2f2;
+    background-color: white;
+    max-width: 99%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.lodgingCards img
+{
+    object-fit: cover;
+    padding: 0%;
+    border-radius: 30px 30px 0px 0px;
+    width: 100%;
+    height: 200px;
+}
+
+.lodgingCardsTxt
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.lodgingCardsTxt h3
+{
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+
+.lodgingCardsTxt p
+{
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+.ratingLodging
+{
+    margin-left: 10px;
+}
+
+aside
+{
+    border: 1px solid #f2f2f2;
+    border-radius: 0px 0px 0px 0px;
+    background-color: #f2f2f2;
+    width: 475px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titleAside
+{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleAside h2
+{
+    font-size: 1.5em;
+}
+
+.titleAside i
+{
+    width: 20px;
+    height: 20px;
+    font-size: 1.5em;
+    margin-top: 2px;
+}
+
+.popularCards
+{
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+    display: flex;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    width: 90%;
+    height: 160px;
+}
+
+.popularCards Img
+{
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    width: 170px;
+    height: 150px;
+    padding: 2%;
+}
+
+.popularCardsTxt
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.popularCardsTxt h3
+{
+    font-size: 1.2em;
+    margin-bottom: 1px;
+}
+
+.popularCardsTxt p
+{
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 0px;
+}
+
+.noteEtoiles
+{
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.titleAside, .popularCards
+{
+margin-bottom: 15px;
+}
+}
