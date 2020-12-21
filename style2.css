@@ -1,7 +1,4 @@
-/*css du projet réservia remit au propre du propre*/
-
 /* =============================================   police d'écriture   ============================================= */
-
 
 @font-face {
     font-family: 'ralewayregular';
@@ -21,7 +18,6 @@
 
 body {
     font-family: 'ralewayregular','Trebuchet MS', Arial, sans-serif;
-
 }
 
 .block_page {
@@ -57,11 +53,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    color: white;
+    color: black;
 }
 /* =================================================    général    ================================================= */
 
@@ -86,16 +78,13 @@ header {
 
 .navigation ul {
     width: 300px;
-    color:black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 .liLodging a, .liActivities a {
-    color:black;
     font-size: 1.1em;
-    text-decoration: none;
     margin-top: 30px;
 }
 
@@ -112,7 +101,6 @@ header {
 .register a {
     color:#0065FC;
     font-size: 1.2em;
-    text-decoration: none;
     text-decoration-line: none;
     font-weight: bold;
 }
@@ -138,11 +126,7 @@ header {
     header {
         width: 480px;
         height: 200px;
-        display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: none;
     }
 
     header :nth-child(2) { order: 3; }
@@ -151,16 +135,10 @@ header {
         margin-left: 0%;
         width: 100%;
         margin-bottom: 40px;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
     }
 
     .navigation ul {
         width: 100%;
-        color:black;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
@@ -170,10 +148,9 @@ header {
 
     .liLodging a, .liActivities a {
         margin: auto;
-        width: 245px;
-        padding-bottom: 10px;
-        font-size: 1.1em;
-        color: black;
+        width: 250px;
+        padding-bottom: 20px;
+        font-size: 1.2em;
         display: flex;
         justify-content: center;
         border-bottom: 3px solid grey;
@@ -243,21 +220,27 @@ header {
 
 .search {
     font-weight: bold;
+    padding-left: 10px;
+    border: 1px solid #f2f2f2;
 }
 
 button {
     background-color: #0065FC;
-    color: white;
+    border: 1px solid #0065FC;
     width: 100px;
     height: 40px;
     border-radius: 0px 10px 10px 0px;
+}
+
+button a {
+    color: white;
 }
 
 @media all and (max-device-width: 480px)
 {
     .topSection {
         width: 480px;
-        height: 550px;
+        height: 450px;
         margin-bottom: 40px;
         display: flex;
         flex-direction: column;
@@ -319,7 +302,6 @@ button {
         position: relative;
     }
 }
-
 /*search area*/
 
 /*filter area*/
@@ -469,12 +451,11 @@ button {
 }
 
 article {
-    border-radius: 30px/30px;
+    border-radius: 30px;
     background-color: #f2f2f2;
     width: 70%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -495,10 +476,10 @@ article h2, article h3 {
 
 .lodgingCards img {
     object-fit: cover;
-    padding: 2%;
-    border-radius: 20px 20px 0px 0px;
     width: 96%;
     height: 200px;
+    padding: 2%;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .lodgingCardsTxt {
@@ -526,7 +507,6 @@ article h2, article h3 {
     margin-top: auto;
     margin-left: 10px;
 }
-
 /*mid section "lodging" article*/
 
 /*mid section "most popular" aside*/
@@ -582,17 +562,19 @@ aside {
 .popularCardsTxt {
     display: flex;
     flex-direction: column;
+    width: 250px;
+    height: 150px;
+    margin-left: 0px;
 }
 
 .popularCardsTxt h3 {
     font-size: 1.2em;
-    margin-bottom: 1px;
+    margin-bottom: 5px;
 }
 
 .popularCardsTxt p {
     font-weight: bold;
     font-size: 0.9em;
-    margin-top: 0px;
 }
 
 .ratingPopular
@@ -601,11 +583,9 @@ aside {
     margin-right: auto;
     margin-bottom: 10px;
 }
-
 /*mid section "most popular" aside*/
 
 /*rating class*/
-
 .ratingLodging, .ratingPopular {
     display: inline-flex;
     justify-content: flex-start;
@@ -632,7 +612,6 @@ aside {
 /*rating class*/
 
 /* link "afficher plus" */
-
 h3 a {
     color: black;
 }
@@ -640,7 +619,6 @@ h3 a {
 h3 a:hover {
     color: black;
 }
-
 /* link "afficher plus" */
 
 @media all and (max-device-width: 1500px) {
@@ -664,7 +642,6 @@ h3 a:hover {
         width: 150px;
         padding: 3%;
     }
-
 }
 
 @media all and (max-device-width: 1025px) {
@@ -708,9 +685,7 @@ h3 a:hover {
         width: 100%;
         height: 450px;
         margin-top: 40px;
-        display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
         align-items: flex-start;
     }
 
@@ -719,29 +694,30 @@ h3 a:hover {
     }
 
     .popularCards {
-        background-color: white;
-        border-radius: 20px 20px 20px 20px;
         width: 30%;
         height: 280px;
-        display: flex;
         flex-flow: row wrap;
     }
 
     .popularCards Img {
         border-radius: 20px 20px 0px 0px;
         width: 98%;
-        padding: 1%;
         height: 170px;
+        padding: 1%;
     }
 
-    .popularCardsTxt h3
-    {
+    .popularCardsTxt {
+        height: 100px;
+    }
+
+    .popularCardsTxt h3 {
         font-size: 1em;
         margin-left: 5px;
+        margin-top: 0px;
     }
 
     .popularCardsTxt p {
-        margin-top: 1px;
+        margin-top: 5px;
         margin-left: 5px;
     }
 
@@ -753,145 +729,87 @@ h3 a:hover {
 
 @media all and (max-device-width: 480px) {
     .midSection {
-        border: 1px solid red;
         width: 480px;
-        height: 2800px;
-        display: flex;
         flex-direction: column-reverse;
-        justify-content: space-around;
+        margin-left: 10px;
     }
 
     aside {
-        border: 1px solid #f2f2f2;
         border-radius: 0px 0px 0px 0px;
         background-color: #f2f2f2;
         width: 475px;
-        height: 620px;
-        display: flex;
+        height: 700px;
+        margin-top: 0px;
         flex-flow: column nowrap;
-    }
-
-    .titleAside {
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         align-items: center;
     }
 
-    .titleAside h2 {
-        font-size: 1.5em;
-    }
-
-    .titleAside i {
-        width: 20px;
-        height: 20px;
-        font-size: 1.5em;
-        margin-top: 2px;
+    .titleAside {
+        margin-left: 10px;
     }
 
     .popularCards {
-        border: 1px solid #f2f2f2;
-        border-radius: 20px;
-        box-shadow: 5px 5px 5px #f2f2f2;
-        display: flex;
-        background-color: white;
-        border-radius: 20px 20px 20px 20px;
         width: 90%;
         height: 160px;
-    }
-
-    .popularCards Img
-    {
-        object-fit: cover;
-        border-radius: 20px 0px 0px 20px;
-        width: 170px;
-        height: 150px;
-        padding: 2%;
-    }
-
-    .popularCardsTxt
-    {
-        display: flex;
         flex-direction: column;
     }
 
-    .popularCardsTxt h3
-    {
+    .popularCards Img {
+        border-radius: 20px 0px 0px 20px;
+        width: 170px;
+        height: 155px;
+        padding: 2%;
+    }
+
+    .popularCardsTxt {
+        height: 150px;
+    }
+
+    .popularCardsTxt h3 {
         font-size: 1.2em;
-        margin-bottom: 1px;
+        margin-top: 15px;
     }
 
-    .popularCardsTxt p
-    {
-        font-weight: bold;
+    .popularCardsTxt p {
         font-size: 0.9em;
-        margin-top: 0px;
+        margin-top: 5px;
     }
 
-    .titleAside, .popularCards
-{
-margin-bottom: 15px;
-}
+    article {
+        background-color: white;
+        width: 480px;
+        height: 2000px;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 
-article {
-    border: 1px solid white;
-    background-color: white;
-    width: auto;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
+    article h2, article h3 {
+        font-size: 1.5em;
+        width: 90%;
+    }
 
-.lodgingCards
-{
-    border: 1px solid #f2f2f2;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 8px 8px 8px #f2f2f2;
-    background-color: white;
-    max-width: 99%;
-    height: 300px;
-    margin-bottom: 20px;
-}
+    .lodgingCards {
+        max-width: 98%;
+        height: 320px;
+        border-radius: 30px;
+        margin-bottom: 20px;
+    }
 
-.lodgingCards img
-{
-    object-fit: cover;
-    padding: 0%;
-    border-radius: 30px 30px 0px 0px;
-    width: 100%;
-    height: 200px;
-}
+    .lodgingCards img {
+        width: 99%;
+        height: 200px;
+        padding: 1%;
+        border-radius: 30px 30px 0px 0px;
+    }
 
-.lodgingCardsTxt
-{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    margin-left: 20px;
-}
+    .lodgingCardsTxt {
+        margin-left: 15px;
+    }
 
-.lodgingCardsTxt h3
-{
-    font-size: 1.2em;
-    font-weight: bolder;
-    margin-left: 5px;
-    margin-top: 0px;
-    margin-bottom: 1px;
-}
-
-.lodgingCardsTxt p
-{
-    font-size: 0.9em;
-    font-weight: bold;
-    margin-left: 5px;
-    margin-top: 0px;
-}
-
-.ratingLodging
-{
-    margin-left: 10px;
-}
+    .ratingLodging {
+        padding-left: 2px;
+    }
 }
 
 /* ================================================= Mid Section ================================================= */
@@ -899,53 +817,47 @@ article {
 /* ================================================= bottom section ============================================== */
 .container {
     width: 100%;
-    height: 500px;
+    height: 540px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.activitiesCardsVieuxPort, .activitiesCardsParcCalanques {
+.activitiesCardsVieuxPort, .activitiesCardsParcCalanques,.activitiesCardsFortPomegues, .activitiesCardsNotreDame, .activitiesCardsIlesFrioul, .activitiesCardsParcLongchamp {
     border: 1px solid #f2f2f2;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #f2f2f2;
-    width: 20%;
+    width: 23%;
+}
+
+.activitiesCardsVieuxPort, .activitiesCardsParcCalanques {
     height: 100%;
 }
 
 .activitiesCardsFortPomegues, .activitiesCardsNotreDame {
-    border: 1px solid #f2f2f2;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px #f2f2f2;
-    width: 20%;
     height: 50%;
 }
 
 .activitiesCardsIlesFrioul, .activitiesCardsParcLongchamp {
-    border: 1px solid #f2f2f2;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px #f2f2f2;
-    width: 20%;
-    height: 45%;
+    height: 40%;
 }
 
+.activitiesCardsVieuxPort img, .activitiesCardsParcCalanques img, .activitiesCardsFortPomegues img, .activitiesCardsIlesFrioul img, .activitiesCardsNotreDame img, .activitiesCardsParcLongchamp img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+}
 .activitiesCardsVieuxPort img, .activitiesCardsParcCalanques img {
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 85%;
+    height: 90%;
 }
 
-.activitiesCardsFortPomegues img, .activitiesCardsIlesFrioul img,
-.activitiesCardsNotreDame img, .activitiesCardsParcLongchamp img {
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
+.activitiesCardsFortPomegues img, .activitiesCardsIlesFrioul img, .activitiesCardsNotreDame img, .activitiesCardsParcLongchamp img {
     height: 80%;
 }
 
 .underPictures {
-    margin-top: 10px;
-    margin-left: 5px;
+    margin-top: 0px;
+    margin-left: 10px;
 }
 
 @media all and (max-device-width: 1500px) {
@@ -960,46 +872,39 @@ article {
     }
 
     .container {
-        height: 1100px;
-        padding-top: 20px;
-        background-color:white;
-        display: flex;
+        height: 1000px;
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: flex-start;
     }
 
-    .activitiesCardsVieuxPort, .activitiesCardsParcCalanques {
+    .activitiesCardsVieuxPort, .activitiesCardsParcCalanques, .activitiesCardsFortPomegues, .activitiesCardsNotreDame, .activitiesCardsIlesFrioul, .activitiesCardsParcLongchamp {
         border: 1px solid #f2f2f2;
         border-radius: 20px;
         box-shadow: 8px 8px 8px #f2f2f2;
         width: 45%;
+    }
+
+    .activitiesCardsVieuxPort, .activitiesCardsParcCalanques {
         height: 500px;
     }
 
-    .activitiesCardsVieuxPort img, .activitiesCardsParcCalanques img {
-        object-fit: cover;
-        border-radius: 20px 20px 0px 0px;
-        width: 98%;
-        padding: 1%;
-        height: 88%;
-    }
-
-    .activitiesCardsFortPomegues, .activitiesCardsNotreDame,
-    .activitiesCardsIlesFrioul, .activitiesCardsParcLongchamp {
-        border: 1px solid #f2f2f2;
-        border-radius: 20px;
-        box-shadow: 8px 8px 8px #f2f2f2;
-        width: 45%;
+    .activitiesCardsFortPomegues, .activitiesCardsNotreDame, .activitiesCardsIlesFrioul, .activitiesCardsParcLongchamp {
         height: 220px;
     }
 
-    .activitiesCardsFortPomegues img, .activitiesCardsIlesFrioul img,
-    .activitiesCardsNotreDame img, .activitiesCardsParcLongchamp img {
+    .activitiesCardsVieuxPort img, .activitiesCardsParcCalanques img, .activitiesCardsFortPomegues img, .activitiesCardsIlesFrioul img, .activitiesCardsNotreDame img, .activitiesCardsParcLongchamp img {
         object-fit: cover;
         border-radius: 20px 20px 0px 0px;
         width: 98%;
         padding: 1%;
+    }
+
+    .activitiesCardsVieuxPort img, .activitiesCardsParcCalanques img {
+        height: 88%;
+    }
+
+    .activitiesCardsFortPomegues img, .activitiesCardsIlesFrioul img, .activitiesCardsNotreDame img, .activitiesCardsParcLongchamp img {
         height: 75%;
     }
     .container :nth-child(1) { order: 2; }
@@ -1013,6 +918,35 @@ article {
         margin-top: 5px;
         margin-left: 50px;
         font-size: large;
+    }
+}
+
+@media all and (max-device-width: 480px) {
+    .bottomSection h2 {
+        margin-left: 10px;
+    }
+
+    .container {
+        height: 2000px;
+        width: 480px;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .activitiesCardsVieuxPort, .activitiesCardsParcCalanques, .activitiesCardsNotreDame, .activitiesCardsIlesFrioul, .activitiesCardsParcLongchamp, .activitiesCardsFortPomegues {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .activitiesCardsVieuxPort img, .activitiesCardsParcCalanques img, .activitiesCardsNotreDame img, .activitiesCardsIlesFrioul img, .activitiesCardsParcLongchamp img, .activitiesCardsFortPomegues img{
+        height: 80%;
+    }
+
+    .underPictures {
+        margin-top: 10px;
+        margin-left: 15px;
     }
 }
 
