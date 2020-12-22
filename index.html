@@ -27,17 +27,25 @@
                 <h4>En plein centre ville ou en pleine nature</h4>
                 <div class="blockFinder">
                     <form  method="POST" action="reference.php">
-                        <p class="finder"><label for="search"><span class="logoMapMarker"><i class="fas fa-map-marker-alt"></i></span></label>
-                        <input class="search" type="search" id="search" value="Marseille, France"  />
-                        <button><a href="pageClick.html">Rechercher</a></button></p>  <!--a href="pageClick.html" est la page vide de destination des lien clickable du projet-->
+                        <p class="finder">
+                            <label for="search">
+                                <span class="logoMapMarker"><i class="fas fa-map-marker-alt"></i></span>
+                            </label>
+                            <input class="search" type="search" id="search" value="Marseille, France"  />
+                            <button onclick="window.location.href='pageClick.php';">Rechercher</button>
+                        </p>
                     </form>
                 </div>
 <!-- search button for @media all and (max-device-width: 480px) -->
                 <div class="blockFinder480">
                     <form  method="POST" action="reference.php">
-                        <p class="finder480"><label for="search"><span class="logoMapMarker480"><i class="fas fa-map-marker-alt fa-2x"></i></span></label>
-                        <input class="search480" type="search" id="search" value="Marseille, France"  />
-                        <button class="button480"><a href="pageClick.html"><i class="fas fa-search fa-2x"></i></a></button></p>  <!--a href="pageClick.html" est la page vide de destination des lien clickable du projet-->
+                        <p class="finder480">
+                            <label for="search">
+                                <span class="logoMapMarker480"><i class="fas fa-map-marker-alt fa-2x"></i></span>
+                            </label>
+                            <input class="search480" type="search" id="search" value="Marseille, France"  />
+                            <button class="button480" onclick="window.location.href='pageClick.php';"><i class="fas fa-search fa-2x"></i></button>
+                        </p>
                     </form>
                 </div>
 <!-- search button for @media all and (max-device-width: 480px) -->
@@ -242,23 +250,37 @@
             <div class="firstColumn">
                 <h3>A propos</h3>
                 <ul>
-                    <li><a href="pageClick.html">fonctionnement du site</a></li><br />
-                    <li><a href="pageClick.html">conditions générales de vente</a></li><br />
-                    <li><a href="pageClick.html">données de confidentialité</a></li>
+                    <li>
+                        <a href="pageClick.html">fonctionnement du site</a>
+                    </li>
+                    <li>
+                        <a href="pageClick.html">conditions générales de vente</a>
+                    </li>
+                    <li>
+                        <a href="pageClick.html">données de confidentialité</a>
+                    </li>
                 </ul>
             </div>
             <div class="secondColumn">
                 <h3>Nos Hébergements</h3>
                 <ul>
-                    <li><a href="pageClick.html">Chartre qualité</a></li><br />
-                    <li><a href="pageClick.html">Soumettre votre hôtel</a></li>
+                    <li>
+                        <a href="pageClick.html">Chartre qualité</a>
+                    </li>
+                    <li>
+                        <a href="pageClick.html">Soumettre votre hôtel</a>
+                    </li>
                 </ul>
             </div>
             <div class="firdColumn">
                 <h3>Assistance</h3>
                 <ul>
-                    <li><a href="pageClick.html">Centre d'aide</a></li><br />
-                    <li><a href="pageClick.html">Nous contacter</a></li>
+                    <li>
+                        <a href="pageClick.html">Centre d'aide</a>
+                    </li>
+                    <li>
+                        <a href="pageClick.html">Nous contacter</a>
+                    </li>
                 </ul>
             </div>
         </footer>
