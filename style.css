@@ -15,6 +15,12 @@ body {
     font-family: 'ralewayregular','Trebuchet MS', Arial, sans-serif;
 }
 
+@media all and (max-device-width: 480px) {
+    body {
+        width: 480px;
+    }
+}
+
 .block_page {
     width: 70%;
     margin: auto;
@@ -118,7 +124,6 @@ header {
 
 @media all and (max-device-width: 480px) {
     header {
-        width: 480px;
         height: 200px;
         flex-flow: row wrap;
     }
@@ -214,6 +219,7 @@ header {
 }
 
 button {
+    color: white;
     background-color: #0065FC;
     border: 1px solid #0065FC;
     width: 100px;
@@ -221,14 +227,13 @@ button {
     border-radius: 0px 10px 10px 0px;
 }
 
-button a {
-    color: white;
+button:hover {
+    color: #f2f2f2;
 }
 
 @media all and (max-device-width: 480px)
 {
     .topSection {
-        width: 480px;
         height: 450px;
         margin-bottom: 40px;
         display: flex;
@@ -284,11 +289,18 @@ button a {
     .button480 {
         border: #0065FC;
         background-color: #0065FC;
-        color: white;
         width: 60px;
         height: 60px;
         border-radius: 20px;
         position: relative;
+    }
+
+    .button480 i {
+        color: white;
+    }
+
+    .button480:hover {
+        color: #f2f2f2;
     }
 }
 /*search area*/
@@ -401,7 +413,6 @@ button a {
 
 @media all and (max-device-width: 480px) {
     .filter {
-        width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -551,7 +562,7 @@ aside {
     border-radius: 20px 0px 0px 20px;
     width: 170px;
     height: 150px;
-    padding: 2%;
+    padding: 1.5%;
 }
 
 .popularCardsTxt {
@@ -625,13 +636,12 @@ aside {
 
     .popularCards Img{
         width: 150px;
-        padding: 3%;
+        padding: 1.5%;
     }
 }
 
 @media all and (max-device-width: 1025px) {
     .midSection {
-        width: 100%;
         flex-wrap: wrap;
     }
 
@@ -688,7 +698,7 @@ aside {
         border-radius: 20px 20px 0px 0px;
         width: 98%;
         height: 170px;
-        padding: 1%;
+        padding: 1,5%;
     }
 
     .popularCardsTxt {
@@ -714,15 +724,13 @@ aside {
 
 @media all and (max-device-width: 480px) {
     .midSection {
-        width: 480px;
         flex-direction: column-reverse;
-        margin-left: 10px;
     }
 
     aside {
         border-radius: 0px 0px 0px 0px;
         background-color: #f2f2f2;
-        width: 475px;
+        width: 480px;
         height: 700px;
         margin-top: 0px;
         flex-flow: column nowrap;
@@ -743,7 +751,7 @@ aside {
         border-radius: 20px 0px 0px 20px;
         width: 170px;
         height: 155px;
-        padding: 2%;
+        padding: 0.5%;
     }
 
     .popularCardsTxt {
@@ -782,7 +790,7 @@ aside {
     }
 
     .lodgingCards img {
-        width: 99%;
+        width: 98%;
         height: 200px;
         padding: 1%;
         border-radius: 30px 30px 0px 0px;
@@ -927,7 +935,6 @@ aside {
 
     .container {
         height: 2000px;
-        width: 480px;
         flex-flow: column nowrap;
         justify-content: space-evenly;
         align-items: center;
@@ -967,6 +974,10 @@ footer {
 .firstColumn h3, .secondColumn h3, .firdColumn h3 {
     margin-left: 40px;
     font-size: 1.3em;
+}
+
+.firstColumn li, .secondColumn li, .firdColumn li {
+    padding-bottom: 15px;
 }
 
 @media all and (max-device-width: 480px)
