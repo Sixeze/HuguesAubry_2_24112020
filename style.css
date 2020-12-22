@@ -466,7 +466,7 @@ article {
     align-items: center;
 }
 
-article h2, article h3 {
+article h1, article h2 {
     font-size: 1.5em;
     width: 90%;
 }
@@ -650,7 +650,7 @@ aside {
         height: 1200px;
     }
 
-    article h2, article h3 {
+    article h1, article h2 {
         font-size: 1.7em;
         width: 85%;
     }
@@ -777,7 +777,7 @@ aside {
         align-items: flex-start;
     }
 
-    article h2, article h3 {
+    article h1, article h2 {
         font-size: 1.5em;
         width: 90%;
     }
@@ -866,7 +866,7 @@ aside {
 }
 
 @media all and (max-device-width: 1025px) {
-    .bottomSection h2 {
+    .bottomSection h1 {
         margin-left: 5%;
     }
 
@@ -929,7 +929,7 @@ aside {
 }
 
 @media all and (max-device-width: 480px) {
-    .bottomSection h2 {
+    .bottomSection h1 {
         margin-left: 10px;
     }
 
