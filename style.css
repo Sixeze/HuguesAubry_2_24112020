@@ -184,9 +184,9 @@ header {
     font-size: 1.7em;
 }
 
-.topSection h4 {
+.topSection h2 {
     margin-right: 40px;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .blockFinder480{
@@ -246,7 +246,7 @@ button:hover {
         font-size: 2em;
     }
 
-    .topSection h4 {
+    .topSection h2 {
         width: 400px;
         font-size: 1.5em;
         margin-top: 1px;
@@ -380,8 +380,8 @@ button:hover {
         margin-left: 25px;
     }
 
-    .topSection h4 {
-        font-size: 0.9em;
+    .topSection h2 {
+        font-size: 1.2em;
         margin-left: 26px;
     }
     .finder, .addInformation {
@@ -395,9 +395,9 @@ button:hover {
     }
 
     .filter h2 {
-        font-size: 1.2em;
-        width: 100%;
-        margin-left: 40px;
+        font-size: 1.3em;
+        width: 90%;
+        margin-left: 20px;
     }
 
     .researchFilter
@@ -421,7 +421,7 @@ button:hover {
 
     .filter h2 {
         margin-bottom: 15px;
-        width: 480px;
+        margin-left: 25px;
     }
 
     .researchFilter {
@@ -466,9 +466,11 @@ article {
     align-items: center;
 }
 
-article h1, article h2 {
+article h2 {
     font-size: 1.5em;
-    width: 90%;
+    width: 100%;
+    margin-left: 35px;
+    margin-top: 35px;
 }
 
 .lodgingCards {
@@ -650,9 +652,8 @@ aside {
         height: 1200px;
     }
 
-    article h1, article h2 {
-        font-size: 1.7em;
-        width: 85%;
+    article h2 {
+        margin-left: 50px;
     }
 
     .lodgingCards {
@@ -732,7 +733,7 @@ aside {
         background-color: #f2f2f2;
         width: 480px;
         height: 700px;
-        margin-top: 0px;
+        margin-top: 40px;
         flex-flow: column nowrap;
         align-items: center;
     }
@@ -777,9 +778,9 @@ aside {
         align-items: flex-start;
     }
 
-    article h1, article h2 {
-        font-size: 1.5em;
+    article h2 {
         width: 90%;
+        margin-left: 0px;
     }
 
     .lodgingCards {
@@ -806,6 +807,10 @@ aside {
 }
 
 /* ================================================= bottom section ============================================== */
+.bottomSection h2 {
+    margin-left: 10px;
+}
+
 .container {
     width: 100%;
     height: 540px;
@@ -929,10 +934,6 @@ aside {
 }
 
 @media all and (max-device-width: 480px) {
-    .bottomSection h1 {
-        margin-left: 10px;
-    }
-
     .container {
         height: 2000px;
         flex-flow: column nowrap;
@@ -955,7 +956,6 @@ aside {
         margin-left: 15px;
     }
 }
-
 /* =================================================    footer    ================================================ */
 footer {
     background-color: #f2f2f2;
@@ -971,13 +971,8 @@ footer {
     width: 300px;
     height: 200px;
 }
-.firstColumn h3, .secondColumn h3, .firdColumn h3 {
+.firstColumn h2, .secondColumn h2, .firdColumn h2 {
     margin-left: 40px;
-    font-size: 1.3em;
-}
-
-.firstColumn li, .secondColumn li, .firdColumn li {
-    padding-bottom: 15px;
 }
 
 @media all and (max-device-width: 480px)
