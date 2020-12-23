@@ -15,7 +15,7 @@ body {
     font-family: 'ralewayregular','Trebuchet MS', Arial, sans-serif;
 }
 
-@media all and (max-device-width: 480px) {
+@media all and (max-width: 480px) {
     body {
         width: 480px;
     }
@@ -26,19 +26,19 @@ body {
     margin: auto;
 }
 
-@media all and (max-device-width: 2000px) {
+@media all and (max-width: 2000px) {
     .block_page {
         width: 90%;
     }
 }
 
-@media all and (max-device-width: 1500px) {
+@media all and (max-width: 1500px) {
     .block_page {
         width: 95%;
     }
 }
 
-@media all and (max-device-width: 1100px) {
+@media all and (max-width: 1100px) {
     .block_page {
         width: 100%;
     }
@@ -105,24 +105,23 @@ header {
     font-weight: bold;
 }
 
-.register a:hover
-{
+.register a:hover {
     color: #0065FC;
 }
 
-@media all and (max-device-width: 1500px) {
+@media all and (max-width: 1500px) {
     .navigation {
         margin-left: 52%;
     }
 }
 
-@media all and (max-device-width: 1100px) {
+@media all and (max-width: 1100px) {
     .navigation {
         margin-left: auto;
     }
 }
 
-@media all and (max-device-width: 480px) {
+@media all and (max-width: 480px) {
     header {
         height: 200px;
         flex-flow: row wrap;
@@ -137,6 +136,7 @@ header {
     }
 
     .navigation ul {
+        padding-left: 0px;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
@@ -146,26 +146,20 @@ header {
     }
 
     .liLodging a, .liActivities a {
-        width: 240px;
-        height: 50px;
+        width: 230px;
+        height: 60px;
         font-size: 1.2em;
+        font-weight: bold;
         display: flex;
         justify-content: center;
-        border-bottom: 3px solid grey;
-    }
-
-    .liLodging a {
-       margin-left: -40px;
+        align-items: center;
+        border-bottom: 4px solid #f2f2f2;
     }
 
     .liLodging a:hover, .liActivities a:hover {
-        border-top: none;
-        border-bottom: 3px solid #0065FC;
-        margin-bottom: 20px;
-    }
-
-    .liLodging a:hover {
-        margin-left: -40px;
+        border: 1px solid transparent;
+        border-bottom: 4px solid #0065FC;
+        padding-top: 0px;
     }
 
     .register {
@@ -189,7 +183,7 @@ header {
     font-size: 1em;
 }
 
-.blockFinder480{
+.blockFinder480 {
     display: none;
 }
 
@@ -231,8 +225,7 @@ button:hover {
     color: #f2f2f2;
 }
 
-@media all and (max-device-width: 480px)
-{
+@media all and (max-width: 480px) {
     .topSection {
         height: 450px;
         margin-bottom: 40px;
@@ -346,8 +339,7 @@ button:hover {
     outline: none;
 }
 
-.formFilter input:hover
-{
+.formFilter input:hover {
     background-color: #f2f2f2;
     color: #0065FC;
 }
@@ -374,7 +366,7 @@ button:hover {
     color: #0065FC;
 }
 
-@media all and (max-device-width: 1000px) {
+@media all and (max-width: 1000px) {
     .topSection h1 {
         font-size: 1.5em;
         margin-left: 25px;
@@ -400,8 +392,7 @@ button:hover {
         margin-left: 20px;
     }
 
-    .researchFilter
-    {
+    .researchFilter {
         margin-bottom: 20px;
         width: 290px;
     }
@@ -411,7 +402,7 @@ button:hover {
     }
 }
 
-@media all and (max-device-width: 480px) {
+@media all and (max-width: 480px) {
     .filter {
         display: flex;
         flex-flow: row wrap;
@@ -458,6 +449,7 @@ button:hover {
 
 article {
     border-radius: 30px;
+    height: 900px;
     background-color: #f2f2f2;
     width: 70%;
     display: flex;
@@ -469,8 +461,13 @@ article {
 article h2 {
     font-size: 1.5em;
     width: 100%;
+    margin-left: 40px;
+    margin-top: 58px;
+}
+
+article h4 {
+    width: 100%;
     margin-left: 35px;
-    margin-top: 35px;
 }
 
 .lodgingCards {
@@ -522,15 +519,16 @@ aside {
     border-radius: 30px/30px;
     background-color: #f2f2f2;
     width: 28%;
-    height: 800px;
+    height: 900px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .titleAside {
     width: 90%;
+    height: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -585,8 +583,7 @@ aside {
     font-size: 0.9em;
 }
 
-.ratingPopular
-{
+.ratingPopular {
     margin-top: auto;
     margin-right: auto;
     margin-bottom: 10px;
@@ -600,14 +597,6 @@ aside {
     font-size: 0.8em;
 }
 
-.rating:hover .fa-star {
-    color:#0065FC;
-}
-
-.rating .fa-star:hover ~ .fa-star {
-	color: #f2f2f2;
-}
-
 .ratingStars {
     color: #f2f2f2;
     cursor: pointer;
@@ -619,7 +608,7 @@ aside {
 }
 /*rating class*/
 
-@media all and (max-device-width: 1500px) {
+@media all and (max-width: 1500px) {
     .lodgingCards {
         height: 250px;
     }
@@ -636,13 +625,13 @@ aside {
         font-size: 0.7em;
     }
 
-    .popularCards Img{
+    .popularCards Img {
         width: 150px;
         padding: 1.5%;
     }
 }
 
-@media all and (max-device-width: 1025px) {
+@media all and (max-width: 1025px) {
     .midSection {
         flex-wrap: wrap;
     }
@@ -653,6 +642,7 @@ aside {
     }
 
     article h2 {
+        margin-top: 20px;
         margin-left: 50px;
     }
 
@@ -686,7 +676,7 @@ aside {
     }
 
     .titleAside {
-        margin-top: 10px;
+        margin-top: 50px;
     }
 
     .popularCards {
@@ -723,7 +713,7 @@ aside {
     }
 }
 
-@media all and (max-device-width: 480px) {
+@media all and (max-width: 480px) {
     .midSection {
         flex-direction: column-reverse;
     }
@@ -731,7 +721,7 @@ aside {
     aside {
         border-radius: 0px 0px 0px 0px;
         background-color: #f2f2f2;
-        width: 480px;
+        width: 98%;
         height: 700px;
         margin-top: 40px;
         flex-flow: column nowrap;
@@ -739,6 +729,7 @@ aside {
     }
 
     .titleAside {
+        margin-top: 0px;
         margin-left: 10px;
     }
 
@@ -771,16 +762,16 @@ aside {
 
     article {
         background-color: white;
-        width: 480px;
+        width: 98%;
         height: 2000px;
         flex-flow: column nowrap;
         justify-content: space-between;
         align-items: flex-start;
     }
 
-    article h2 {
+    article h2, article h4 {
         width: 90%;
-        margin-left: 0px;
+        margin-left: 10px;
     }
 
     .lodgingCards {
@@ -788,6 +779,7 @@ aside {
         height: 320px;
         border-radius: 30px;
         margin-bottom: 20px;
+        box-shadow: 8px 8px 8px #f2f2f2;
     }
 
     .lodgingCards img {
@@ -864,13 +856,13 @@ aside {
     margin-left: 10px;
 }
 
-@media all and (max-device-width: 1500px) {
+@media all and (max-width: 1500px) {
     .container {
         height: 350px;
     }
 }
 
-@media all and (max-device-width: 1025px) {
+@media all and (max-width: 1025px) {
     .bottomSection h1 {
         margin-left: 5%;
     }
@@ -933,8 +925,9 @@ aside {
     }
 }
 
-@media all and (max-device-width: 480px) {
+@media all and (max-width: 480px) {
     .container {
+        width: 97%;
         height: 2000px;
         flex-flow: column nowrap;
         justify-content: space-evenly;
@@ -975,8 +968,7 @@ footer {
     margin-left: 40px;
 }
 
-@media all and (max-device-width: 480px)
-{
+@media all and (max-width: 480px) {
     footer {
         margin-top: 30px;
         width: 480px;
