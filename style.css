@@ -57,6 +57,10 @@ a {
     color: black;
 }
 
+section {
+    margin-bottom: 50px;
+}
+
 /* =================================================     Header    ================================================= */
 header {
     width: 100%;
@@ -85,17 +89,16 @@ header {
 
 .liLodging a, .liActivities a {
     font-size: 1.1em;
-    margin-top: 30px;
 }
 
 .liLodging a:hover, .liActivities a:hover {
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .register {
-    margin-top: 13px;
+    margin-top: 30px;
 }
 
 .register a {
@@ -103,10 +106,6 @@ header {
     font-size: 1.2em;
     text-decoration-line: none;
     font-weight: bold;
-}
-
-.register a:hover {
-    color: #0065FC;
 }
 
 @media all and (max-width: 1500px) {
@@ -146,7 +145,7 @@ header {
     }
 
     .liLodging a, .liActivities a {
-        width: 230px;
+        width: 235px;
         height: 60px;
         font-size: 1.2em;
         font-weight: bold;
@@ -156,7 +155,7 @@ header {
         border-bottom: 4px solid #f2f2f2;
     }
 
-    .liLodging a:hover, .liActivities a:hover {
+    .liLodging a:active, .liActivities a:active, .liLodging a:hover, .liActivities a:hover {
         border: 1px solid transparent;
         border-bottom: 4px solid #0065FC;
         padding-top: 0px;
@@ -212,16 +211,17 @@ header {
     outline: none;
 }
 
-button {
+.button {
     color: white;
     background-color: #0065FC;
     border: 1px solid #0065FC;
     width: 100px;
     height: 40px;
     border-radius: 0px 10px 10px 0px;
+    outline: none;
 }
 
-button:hover {
+.button:hover {
     color: #f2f2f2;
 }
 
@@ -277,6 +277,7 @@ button:hover {
         width: 280px;
         font-size: 1.2em;
         padding-left: 15px;
+        outline: none;
     }
 
     .button480 {
@@ -286,10 +287,12 @@ button:hover {
         height: 60px;
         border-radius: 20px;
         position: relative;
+        outline: none;
     }
 
     .button480 i {
         color: white;
+        margin: auto;
     }
 
     .button480:hover {
@@ -306,11 +309,11 @@ button:hover {
     align-items: baseline;
 }
 
-.filter h2, .researchFilter {
+.filter h2, .inputFilter {
     margin-right: 40px;
 }
 
-.researchFilter {
+.formFilter {
     display: flex;
 }
 
@@ -328,24 +331,24 @@ button:hover {
     margin: auto;
 }
 
-.formFilter input {
-    width: 140px;
-    height: 33px;
+.inputFilter {
+    width: 180px;
+    height: 40px;
     border: solid 3px #f2f2f2;
     border-radius: 20px;
     font-weight: bold;
-    padding-left: 40px;
+    padding-left: 45px;
     display: flex;
     outline: none;
+    background-color: white;
 }
 
-.formFilter input:hover {
+.inputFilter:hover {
     background-color: #f2f2f2;
     color: #0065FC;
 }
 
 .addInformation {
-    margin-bottom: 60px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -383,22 +386,22 @@ button:hover {
     .filter {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
     }
 
     .filter h2 {
         font-size: 1.3em;
-        width: 90%;
-        margin-left: 20px;
+        width: 100%;
     }
 
-    .researchFilter {
+    .formFilter {
         margin-bottom: 20px;
-        width: 290px;
-    }
-
-    .formFilter input {
-        width: 150px;
+        width: 70%;
+        height: 100px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -406,8 +409,7 @@ button:hover {
     .filter {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-items: center;
+        justify-content: space-around;
     }
 
     .filter h2 {
@@ -415,10 +417,10 @@ button:hover {
         margin-left: 25px;
     }
 
-    .researchFilter {
+    .formFilter {
         margin-bottom: none;
-        margin-right: -10px;
-        width: auto;
+        width: 480px;
+        height: 120px;
     }
 
     .filterIcon {
@@ -426,10 +428,17 @@ button:hover {
         height: 50px;
     }
 
-    .formFilter input {
-        height: 43px;
+    .inputFilter {
+        width: 190px;
+        height: 50px;
         border-radius: 25px;
         font-size: 0.9em;
+        padding-left: 50px;
+    }
+
+    .inputFilter:active {
+        background-color: #f2f2f2;
+        color: #0065FC;
     }
 
     .addInformation {
@@ -439,91 +448,44 @@ button:hover {
 }
 
 /* ================================================= Mid Section ================================================= */
-/*mid section "lodging" article*/
 .midSection {
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: space-between;
-    margin-bottom: 70px;
 }
 
-article {
+.lodging, .popular {
     border-radius: 30px;
     height: 900px;
     background-color: #f2f2f2;
-    width: 70%;
     display: flex;
+}
+
+.lodging {
+    width: 70%;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
 }
 
-article h2 {
-    font-size: 1.5em;
-    width: 100%;
-    margin-left: 40px;
-    margin-top: 58px;
-}
-
-article h4 {
-    width: 100%;
-    margin-left: 35px;
-}
-
-.lodgingCards {
-    border: 1px solid #f2f2f2;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px lightgray;
-    background-color: white;
-    max-width: 30%;
-    height: 300px;
-}
-
-.lodgingCards img {
-    object-fit: cover;
-    width: 96%;
-    height: 200px;
-    padding: 2%;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.lodgingCardsTxt {
-    display: flex;
-    flex-direction: column;
-    margin-left: 8px;
-}
-
-.lodgingCardsTxt h3 {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-left: 5px;
-    margin-top: 0px;
-    margin-bottom: 1px;
-}
-
-.lodgingCardsTxt p {
-    font-size: 0.9em;
-    font-weight: bold;
-    margin-left: 5px;
-    margin-top: 0px;
-}
-
-.ratingLodging {
-    margin-top: auto;
-    margin-left: 10px;
-}
-/*mid section "lodging" article*/
-
-/*mid section "most popular" aside*/
-aside {
-    border-radius: 30px/30px;
-    background-color: #f2f2f2;
+.popular {
     width: 28%;
-    height: 900px;
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.lodging h2, .titleAside h2, .titleAside i {
+    font-size: 1.5em;
+}
+
+.lodging h2, .lodging h4 {
+    width: 100%;
+    margin-left: 40px;
+}
+
+.lodging h2 {
+    margin-top: 58px;
 }
 
 .titleAside {
@@ -535,66 +497,93 @@ aside {
     align-items: center;
 }
 
-.titleAside h2 {
-    font-size: 1.5em;
-}
-
 .titleAside i {
     width: 20px;
     height: 20px;
-    font-size: 1.5em;
     margin-top: 2px;
 }
 
-.popularCards {
+.cards {
     border: 1px solid #f2f2f2;
     border-radius: 20px;
     box-shadow: 5px 5px 5px lightgray;
-    display: flex;
     background-color: white;
-    border-radius: 20px 20px 20px 20px;
+}
+
+.lodging .cards {
+    width: 30%;
+    height: 300px;
+}
+
+.popular .cards {
+    display: flex;
     width: 90%;
     height: 160px;
 }
 
-.popularCards Img {
+.cards Img {
     object-fit: cover;
-    border-radius: 20px 0px 0px 20px;
-    width: 170px;
-    height: 150px;
-    padding: 1.5%;
 }
 
-.popularCardsTxt {
+.lodging .cards img {
+    width: 96%;
+    height: 200px;
+    padding: 2%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.popular .cards Img {
+    border-radius: 20px 0px 0px 20px;
+    width: 170px;
+    height: 95%;
+    padding: 1%;
+}
+
+.cardsTxt {
     display: flex;
     flex-direction: column;
+}
+
+.lodging .cardsTxt {
+    margin-left: 15px;
+}
+
+.popular .cardsTxt {
     width: 250px;
     height: 150px;
     margin-left: 0px;
 }
 
-.popularCardsTxt h3 {
+.cardsTxt h3 {
     font-size: 1.2em;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
-.popularCardsTxt p {
+.lodging .cardsTxt h3 {
+    margin-top: 0px;
+}
+
+.cardsTxt p {
     font-weight: bold;
     font-size: 0.9em;
 }
 
-.ratingPopular {
-    margin-top: auto;
+
+.lodging .cardsTxt p {
+    margin-top: 0px;
+}
+
+.popular .cardsTxt .rating {
     margin-right: auto;
     margin-bottom: 10px;
 }
-/*mid section "most popular" aside*/
 
 /*rating class*/
-.ratingLodging, .ratingPopular {
+.rating {
     display: inline-flex;
     justify-content: flex-start;
     font-size: 0.8em;
+    margin-top: auto;
 }
 
 .ratingStars {
@@ -613,19 +602,19 @@ aside {
         height: 250px;
     }
 
-    .lodgingCards img {
+    .lodging .Cards img {
         height: 155px;
     }
 
-    .lodgingCardsTxt h3, .popularCardsTxt h3  {
+    .cardsTxt h3 {
         font-size: 1em;
     }
 
-    .lodgingCardsTxt p, .popularCardsTxt p  {
+    .cardsTxt p {
         font-size: 0.7em;
     }
 
-    .popularCards Img {
+    .popular .Cards Img {
         width: 150px;
         padding: 1.5%;
     }
@@ -636,38 +625,38 @@ aside {
         flex-wrap: wrap;
     }
 
-    article {
+    .lodging {
         width: 100%;
         height: 1200px;
     }
 
-    article h2 {
+    .lodging h2 {
         margin-top: 20px;
         margin-left: 50px;
     }
 
-    .lodgingCards {
+    .lodging .Cards {
         max-width: 40%;
         height: 290px;
     }
 
-    .lodgingCards img {
+    .lodging .Cards img {
         height: 190px;
     }
 
-    .lodgingCardsTxt {
+    .lodging .CardsTxt {
         margin-left: 1px;
     }
 
-    .lodgingCardsTxt h3, .lodgingCardsTxt p {
+    .lodging .CardsTxt h3, .lodging .CardsTxt p {
         margin-left: 15px;
     }
 
-    .ratingLodging {
+    .lodging .CardsTxt .rating {
         padding-left: 5px;
     }
 
-    aside {
+    .popular {
         width: 100%;
         height: 450px;
         margin-top: 40px;
@@ -679,35 +668,35 @@ aside {
         margin-top: 50px;
     }
 
-    .popularCards {
+    .popular .Cards {
         width: 30%;
         height: 280px;
         flex-flow: row wrap;
     }
 
-    .popularCards Img {
+    .popular .Cards Img {
         border-radius: 20px 20px 0px 0px;
         width: 98%;
         height: 170px;
         padding: 1,5%;
     }
 
-    .popularCardsTxt {
+    .popular .CardsTxt {
         height: 100px;
     }
 
-    .popularCardsTxt h3 {
+    .popular .CardsTxt h3 {
         font-size: 1em;
         margin-left: 5px;
         margin-top: 0px;
     }
 
-    .popularCardsTxt p {
+    .popular .CardsTxt p {
         margin-top: 5px;
         margin-left: 5px;
     }
 
-    .ratingPopular {
+    .popular .CardsTxt .rating {
         margin-bottom: 15px;
         margin-left: 5px;
     }
@@ -718,12 +707,11 @@ aside {
         flex-direction: column-reverse;
     }
 
-    aside {
+    .popular {
         border-radius: 0px 0px 0px 0px;
         background-color: #f2f2f2;
         width: 98%;
         height: 700px;
-        margin-top: 40px;
         flex-flow: column nowrap;
         align-items: center;
     }
@@ -733,34 +721,35 @@ aside {
         margin-left: 10px;
     }
 
-    .popularCards {
+    .popular .Cards {
         width: 90%;
         height: 160px;
         flex-direction: column;
     }
 
-    .popularCards Img {
+    .popular .cards Img {
         border-radius: 20px 0px 0px 20px;
         width: 170px;
         height: 155px;
         padding: 0.5%;
     }
 
-    .popularCardsTxt {
+    .popular .cardsTxt {
         height: 150px;
+        padding-left: 5px;
     }
 
-    .popularCardsTxt h3 {
+    .popular .cardsTxt h3 {
         font-size: 1.2em;
         margin-top: 15px;
     }
 
-    .popularCardsTxt p {
+    .popular .cardsTxt p {
         font-size: 0.9em;
         margin-top: 5px;
     }
 
-    article {
+    .lodging {
         background-color: white;
         width: 98%;
         height: 2000px;
@@ -769,38 +758,38 @@ aside {
         align-items: flex-start;
     }
 
-    article h2, article h4 {
+    .lodging h2, .lodging h4 {
         width: 90%;
         margin-left: 10px;
     }
 
-    .lodgingCards {
-        max-width: 98%;
+    .lodging .cards {
+        width: 98%;
         height: 320px;
         border-radius: 30px;
         margin-bottom: 20px;
         box-shadow: 8px 8px 8px #f2f2f2;
     }
 
-    .lodgingCards img {
+    .lodging .cards img {
         width: 98%;
         height: 200px;
         padding: 1%;
         border-radius: 30px 30px 0px 0px;
     }
 
-    .lodgingCardsTxt {
+    .lodging .cardsTxt {
         margin-left: 15px;
     }
 
-    .ratingLodging {
+    .lodging .cardsTxt .rating {
         padding-left: 2px;
     }
 }
 
 /* ================================================= bottom section ============================================== */
 .bottomSection h2 {
-    margin-left: 10px;
+    margin-left: 1%;
 }
 
 .container {
@@ -812,48 +801,48 @@ aside {
     align-items: center;
 }
 
-.activitiesCardsVieuxPort, .activitiesCardsParcCalanques,.activitiesCardsFortPomegues, .activitiesCardsNotreDame, .activitiesCardsIlesFrioul, .activitiesCardsParcLongchamp {
+.cards2 {
     border: 1px solid #f2f2f2;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #f2f2f2;
     width: 23%;
 }
 
-.activitiesCardsVieuxPort, .activitiesCardsParcCalanques {
+.cards2.picture1, .cards2.picture4 {
     height: 100%;
 }
 
-.activitiesCardsVieuxPort {
+.cards2.picture1 {
     margin-left: -20px;
 }
 
-.activitiesCardsFortPomegues, .activitiesCardsNotreDame {
+.cards2.picture2, .cards2.picture5 {
     height: 50%;
 }
 
-.activitiesCardsIlesFrioul, .activitiesCardsParcLongchamp {
+.cards2.picture3, .cards2.picture6 {
     height: 40%;
 }
 
-.activitiesCardsNotreDame, .activitiesCardsParcLongchamp {
+.cards2.picture5, .cards2.picture6 {
     margin-right: -20px;
 }
 
-.activitiesCardsVieuxPort img, .activitiesCardsParcCalanques img, .activitiesCardsFortPomegues img, .activitiesCardsIlesFrioul img, .activitiesCardsNotreDame img, .activitiesCardsParcLongchamp img {
+.cards2 img {
     border-radius: 20px 20px 0px 0px;
     width: 100%;
 }
-.activitiesCardsVieuxPort img, .activitiesCardsParcCalanques img {
+.cards2.picture1 img, .cards2.picture4 img {
     height: 90%;
 }
 
-.activitiesCardsFortPomegues img, .activitiesCardsIlesFrioul img, .activitiesCardsNotreDame img, .activitiesCardsParcLongchamp img {
+.cards2.picture2 img, .cards2.picture3 img, .cards2.picture5 img, .cards2.picture6 img {
     height: 80%;
 }
 
 .underPictures {
-    margin-top: 0px;
-    margin-left: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
 }
 
 @media all and (max-width: 1500px) {
@@ -863,52 +852,52 @@ aside {
 }
 
 @media all and (max-width: 1025px) {
-    .bottomSection h1 {
+    .bottomSection h2 {
         margin-left: 5%;
     }
 
     .container {
         height: 1000px;
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: flex-start;
     }
 
-    .activitiesCardsVieuxPort, .activitiesCardsParcCalanques, .activitiesCardsFortPomegues, .activitiesCardsNotreDame, .activitiesCardsIlesFrioul, .activitiesCardsParcLongchamp {
+    .cards2 {
         border: 1px solid #f2f2f2;
         border-radius: 20px;
         box-shadow: 8px 8px 8px #f2f2f2;
         width: 45%;
     }
 
-    .activitiesCardsVieuxPort, .activitiesCardsParcCalanques {
+    .cards2.picture1, .cards2.picture4 {
         height: 500px;
     }
 
-    .activitiesCardsVieuxPort {
+    .cards2.picture1 {
         margin-left: 0px;
     }
 
-    .activitiesCardsFortPomegues, .activitiesCardsNotreDame, .activitiesCardsIlesFrioul, .activitiesCardsParcLongchamp {
+    .cards2.picture2, .cards2.picture5, .cards2.picture3, .cards2.picture6 {
         height: 220px;
     }
 
-    .activitiesCardsNotreDame, .activitiesCardsParcLongchamp {
+    .cards2.picture5, .cards2.picture6 {
         margin-right: 0px;
     }
 
-    .activitiesCardsVieuxPort img, .activitiesCardsParcCalanques img, .activitiesCardsFortPomegues img, .activitiesCardsIlesFrioul img, .activitiesCardsNotreDame img, .activitiesCardsParcLongchamp img {
+    .cards2 img{
         object-fit: cover;
         border-radius: 20px 20px 0px 0px;
         width: 98%;
         padding: 1%;
     }
 
-    .activitiesCardsVieuxPort img, .activitiesCardsParcCalanques img {
+    .cards2.picture1 img, .cards2.picture4 img {
         height: 88%;
     }
 
-    .activitiesCardsFortPomegues img, .activitiesCardsIlesFrioul img, .activitiesCardsNotreDame img, .activitiesCardsParcLongchamp img {
+    .cards2.picture2 img, .cards2.picture3 img, .cards2.picture5 img, .cards2.picture6 img {
         height: 75%;
     }
     .container :nth-child(1) { order: 2; }
@@ -928,24 +917,34 @@ aside {
 @media all and (max-width: 480px) {
     .container {
         width: 97%;
-        height: 2000px;
+        height: 1700px;
         flex-flow: column nowrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
     }
 
-    .activitiesCardsVieuxPort, .activitiesCardsParcCalanques, .activitiesCardsNotreDame, .activitiesCardsIlesFrioul, .activitiesCardsParcLongchamp, .activitiesCardsFortPomegues {
+    .cards2 {
         width: 100%;
-        height: 300px;
+        height: 15%;
         margin-bottom: 30px;
     }
 
-    .activitiesCardsVieuxPort img, .activitiesCardsParcCalanques img, .activitiesCardsNotreDame img, .activitiesCardsIlesFrioul img, .activitiesCardsParcLongchamp img, .activitiesCardsFortPomegues img{
+    .cards2.picture1, .cards2.picture4{
+        height: 220px;
+    }
+
+    .cards2 img {
+        width: 98%;
+        height: 80%;
+        padding: 5px;
+    }
+
+    .cards2.picture1 img, .cards2.picture4 img {
         height: 80%;
     }
 
     .underPictures {
-        margin-top: 10px;
+        margin-top: 5px;
         margin-left: 15px;
     }
 }
