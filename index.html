@@ -16,10 +16,10 @@
                 <nav class="navigation">
                     <ul>
                         <li class="liLodging">
-                            <a href="#anchor1">Hébergements</a>
+                            <p><a href="#anchor1">Hébergements</a></p>
                         </li>
                         <li class="liActivities">
-                            <a href="#anchor2">Activités</a>
+                            <p><a href="#anchor2">Activités</a></p>
                         </li>
                     </ul>
                 </nav>
@@ -36,7 +36,7 @@
                                 <span class="logoMapMarker"><i class="fas fa-map-marker-alt"></i></span>
                             </label>
                             <input class="search" type="search" id="search" value="Marseille, France"  />
-                            <button onclick="window.location.href='pageClick.php';">Rechercher</button>
+                            <input class="button" type="submit" value="rechercher" />
                         </p>
                     </form>
                 </div>
@@ -44,57 +44,64 @@
                 <div class="blockFinder480">
                     <form  method="POST" action="reference.php">
                         <p class="finder480">
-                            <label for="search">
+                            <label for="480search">
                                 <span class="logoMapMarker480"><i class="fas fa-map-marker-alt fa-2x"></i></span>
                             </label>
                             <input class="search480" type="search" id="480search" value="Marseille, France"  />
-                            <button class="button480" onclick="window.location.href='pageClick.php';"><i class="fas fa-search fa-2x"></i></button>
+                            <button class="button480" type="submit">
+                                <i class="fa fa-search fa-2x"></i>
+                            </button>
                         </p>
                     </form>
                 </div>
 <!-- search button for @media all and (max-device-width: 480px) -->
                 <div class="filter">
                     <h2>Filtres</h2>
-                    <div class="researchFilter">
-                        <span class="filterIcon"><i class="fas fa-money-bill-wave"></i></span>
-                        <form class="formFilter Economique" method="POST" action="economique.php">
-                            <input type="text" name="Economique" value="  Economique">
-                        </form>
-                    </div>
-                    <div class="researchFilter">
-                        <span class="filterIcon"><i class="fas fa-child"></i></span>
-                        <form class="formFilter Famillial" method="POST" action="Famillial.php">
-                            <input type="text" name="Familial" value="  Familial">
-                        </form>
-                    </div>
-                    <div class="researchFilter">
-                        <span class="filterIcon"><i class="fas fa-heart"></i></span>
-                        <form class="formFilter Romantique" method="POST" action="Romantique.php">
-                            <input type="text" name="Romantique" value="  Romantique">
-                        </form>
-                    </div>
-                    <div class="researchFilter">
-                        <span class="filterIcon"><i class="fas fa-dog"></i></span>
-                        <form class="formFilter Animaux" method="POST" action="Animaux.php">
-                            <input type="text" name="Animaux" value="  Animaux autorisés">
-                        </form>
-                    </div>
+                    <form class="formFilter" method="POST" action="filter.php">
+                        <div>
+                            <span class="filterIcon">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </span>
+                            <input class="inputFilter" type="submit" name="Economique" value="Economique">
+                        </div>
+                        <div>
+                            <span class="filterIcon">
+                                <i class="fas fa-child"></i>
+                            </span>
+                            <input class="inputFilter" type="submit" name="Familial" value="Familial">
+                        </div>
+                        <div>
+                            <span class="filterIcon">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                            <input class="inputFilter" type="submit" name="Romantique" value="Romantique">
+                        </div>
+                        <div>
+                            <span class="filterIcon">
+                                <i class="fas fa-dog"></i>
+                            </span>
+                            <input class="inputFilter" type="submit" name="Animaux" value="Animaux autorisés">
+                        </div>
+                    </form>
                 </div>
                 <div class="addInformation">
-                    <span class="logoInfo"><i class="fas fa-info"></i></span>
+                    <span class="logoInfo">
+                        <i class="fas fa-info"></i>
+                    </span>
                     <p>Plus de 500 logements sont disponibles dans cette ville.</p>
                 </div>
             </section>
 <!--top section -->
 <!--mid section-->
-            <section class="midSection">
-                <article>
+            <div class="midSection">
+                <section class="lodging">
                     <h2 id="anchor1">Hébergements à Marseille</h2>
-                    <a href="pageClick.html" class="lodgingCards"><img src="images/Hebergements/chambreFer_M.jpg" alt="chambrefer" />
-                        <div class="lodgingCardsTxt">
+                    <a href="pageClick.html" class="cards">
+                        <img src="images/Hebergements/chambreFer_S.jpg" srcset="images/Hebergements/chambreFer_M.jpg 2x" alt="chambrefer" />
+                        <div class="cardsTxt">
                             <h3>Auberge de la Cannebière</h3>
                             <p>Nuit à partir de 25€</p>
-                            <div class="ratingLodging">
+                            <div class="rating">
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
@@ -103,11 +110,12 @@
                             </div>
                         </div>
                     </a>
-                    <a href="pageClick.html" class="lodgingCards"><img src="images/Hebergements/chambreGrise_M.jpg" alt="chambreGrise" />
-                        <div class="lodgingCardsTxt">
+                    <a href="pageClick.html" class="cards">
+                        <img src="images/Hebergements/chambreGrise_S.jpg" srcset="images/Hebergements/chambreGrise_M.jpg x2" alt="chambreGrise" />
+                        <div class="cardsTxt">
                             <h3>Hôtel du port</h3>
                             <p>Nuit à partir de 52€</p>
-                            <div class="ratingLodging">
+                            <div class="rating">
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
@@ -116,11 +124,12 @@
                             </div>
                         </div>
                     </a>
-                    <a href="pageClick.html" class="lodgingCards"><img src="images/Hebergements/chambreMirroir_M.jpg" alt="chambreGrise" />
-                        <div class="lodgingCardsTxt">
+                    <a href="pageClick.html" class="cards">
+                        <img src="images/Hebergements/chambreMirroir_S.jpg" srcset="images/Hebergements/chambreMirroir_M.jpg x2" alt="chambreGrise" />
+                        <div class="cardsTxt">
                             <h3>Hôtel les mouettes</h3>
                             <p>Nuit à partir de 76€</p>
-                            <div class="ratingLodging">
+                            <div class="rating">
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
@@ -129,11 +138,12 @@
                             </div>
                         </div>
                     </a>
-                    <a href="pageClick.html" class="lodgingCards"><img src="images/Hebergements/chambreBlue_M.jpg" alt="chambreBlue" />
-                        <div class="lodgingCardsTxt">
+                    <a href="pageClick.html" class="cards">
+                        <img src="images/Hebergements/chambreBlue_S.jpg" srcset="images/Hebergements/chambreBlue_M.jpg x2" alt="chambreBlue" />
+                        <div class="cardsTxt">
                             <h3>Hôtel de la mer</h3>
                             <p>Nuit à partir de 46€</p>
-                            <div class="ratingLodging">
+                            <div class="rating">
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
@@ -142,11 +152,12 @@
                             </div>
                         </div>
                     </a>
-                    <a href="pageClick.html" class="lodgingCards"><img src="images/Hebergements/chambreBois_M.jpg" alt="chambreBois" />
-                        <div class="lodgingCardsTxt">
+                    <a href="pageClick.html" class="cards">
+                        <img src="images/Hebergements/chambreBois_S.jpg" srcset="images/Hebergements/chambreBois_S.jpg x2" alt="chambreBois" />
+                        <div class="cardsTxt">
                             <h3>Auberge le panier</h3>
                             <p>Nuit à partir de 23€</p>
-                            <div class="ratingLodging">
+                            <div class="rating">
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
@@ -155,11 +166,12 @@
                             </div>
                         </div>
                     </a>
-                    <a href="pageClick.html" class="lodgingCards"><img src="images/Hebergements/chambreBlanche_M.jpg" alt="chambreBlanche" />
-                        <div class="lodgingCardsTxt">
+                    <a href="pageClick.html" class="cards">
+                        <img src="images/Hebergements/chambreBlanche_S.jpg" srcset="images/Hebergements/chambreBlanche_M.jpg x2" alt="chambreBlanche" />
+                        <div class="cardsTxt">
                             <h3>Hôtel chez Amina</h3>
                             <p>Nuit à partir de 96€</p>
-                            <div class="ratingLodging">
+                            <div class="rating">
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
@@ -169,18 +181,17 @@
                         </div>
                     </a>
                     <h4><a href="pageClick.html">Afficher plus</a></h4>
-                </article>
-
-                <aside>
+                </section>
+                <aside class="popular">
                     <div class="titleAside">
                         <h2>Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <a href="pageClick.html" class="popularCards"><img src="images/Hebergements/chambreVerte_M.jpg" alt="chambreVerte" />
-                        <div class="popularCardsTxt">
+                    <a href="pageClick.html" class="cards"><img src="images/Hebergements/chambreVerte_M.jpg" alt="chambreVerte" />
+                        <div class="cardsTxt">
                             <h3>Hôtel le soleil du matin</h3>
                             <p>Nuit à partir de 128€</p>
-                            <div class="ratingPopular">
+                            <div class="rating">
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
@@ -189,11 +200,11 @@
                             </div>
                         </div>
                     </a>
-                    <a href="pageClick.html" class="popularCards"><img src="images/Hebergements/chambreIndus_M.jpg" alt="chambreIndus" />
-                        <div class="popularCardsTxt">
+                    <a href="pageClick.html" class="cards"><img src="images/Hebergements/chambreIndus_M.jpg" alt="chambreIndus" />
+                        <div class="cardsTxt">
                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                             <p>Nuit à partir de 71€</p>
-                            <div class="ratingPopular">
+                            <div class="rating">
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
@@ -202,11 +213,11 @@
                             </div>
                         </div>
                     </a>
-                    <a href="pageClick.html" class="popularCards"><img src="images/Hebergements/chambreBlanche2_M.jpg" alt="chambreBlanche2" />
-                        <div class="popularCardsTxt">
+                    <a href="pageClick.html" class="cards"><img src="images/Hebergements/chambreBlanche2_M.jpg" alt="chambreBlanche2" />
+                        <div class="cardsTxt">
                             <h3>Hôtel Tout bleu et Blanc</h3>
                             <p>Nuit à partir de 68€</p>
-                            <div class="ratingPopular">
+                            <div class="rating">
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
                                 <i class="ratingStars fa fa-star blue"></i>
@@ -216,34 +227,34 @@
                         </div>
                     </a>
                 </aside>
-            </section>
+            </div>
 <!--mid section-->
 <!--bottom section-->
             <section class="bottomSection">
-                <h2 class="titleActivities" id="anchor2">Activités à Marseille</h2>
+                <h2 id="anchor2">Activités à Marseille</h2>
                 <div class="container">
-                    <a href="pageClick.html" class="activitiesCardsVieuxPort">
-                        <img src="images/Activites/bateauxResize_S.png" alt="Vieux Port" />
+                    <a href="pageClick.html" class="cards2 picture1">
+                        <img src="images/Activites/bateauxResize_S.png" srcset="images/Activites/bateaux_M.jpg x2" alt="Vieux Port" />
                         <h3 class="underPictures">Vieux Port</h3>
                     </a>
-                    <a href="pageClick.html" class="activitiesCardsFortPomegues">
-                        <img src="images/Activites/bunkerResize_S.png" alt="Fort de Pomègues" />
+                    <a href="pageClick.html" class="cards2 picture2">
+                        <img src="images/Activites/bunkerResize_S.png" srcset="images/Activites/bunker_M.jpg x2" alt="Fort de Pomègues" />
                         <h3 class="underPictures">Fort de Pomègues</h3>
                     </a>
-                    <a href="pageClick.html" class="activitiesCardsIlesFrioul">
-                        <img src="images/Activites/longueVueResize_S.png" alt="Îles du Frioul" />
+                    <a href="pageClick.html" class="cards2 picture3">
+                        <img src="images/Activites/longueVueResize_S.png" srcset="images/Activites/longueVue_M.jpg x2" alt="Îles du Frioul" />
                         <h3 class="underPictures">Îles du Frioul</h3>
                     </a>
-                    <a href="pageClick.html" class="activitiesCardsParcCalanques">
-                        <img src="images/Activites/calanqueResize_S.png" alt="Parc National des Calanques" />
+                    <a href="pageClick.html" class="cards2 picture4">
+                        <img src="images/Activites/calanqueResize_S.png" srcset="images/Activites/calanque_M.jpg x2" alt="Parc National des Calanques" />
                         <h3 class="underPictures">Parc National des Calanques</h3>
                     </a>
-                    <a href="pageClick.html" class="activitiesCardsNotreDame">
-                        <img src="images/Activites/basiliqueColline_S.jpg" alt="Notre Dame de la Garde" />
+                    <a href="pageClick.html" class="cards2 picture5">
+                        <img src="images/Activites/basiliqueColline_S.jpg" srcset="images/Activites/basiliqueColline_M.jpg x2" alt="Notre Dame de la Garde" />
                         <h3 class="underPictures">Notre Dame de la Garde</h3>
                     </a>
-                    <a href="pageClick.html" class="activitiesCardsParcLongchamp">
-                        <img src="images/Activites/fontaineResize_S.png" alt="Parc Longchamp" />
+                    <a href="pageClick.html" class="cards2 picture6">
+                        <img src="images/Activites/fontaineResize_S.png" srcset="images/Activites/fontaine_M.jpg x2" alt="Parc Longchamp" />
                         <h3 class="underPictures">Parc Longchamp</h3>
                     </a>
                 </div>
