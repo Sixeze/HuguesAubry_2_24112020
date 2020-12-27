@@ -214,7 +214,7 @@ header {
 .button {
     color: white;
     background-color: #0065FC;
-    border: 1px solid #0065FC;
+    border: 0;
     width: 100px;
     height: 40px;
     border-radius: 0px 10px 10px 0px;
@@ -390,8 +390,8 @@ header {
     }
 
     .button480 {
-        border: #0065FC;
         background-color: #0065FC;
+        border: 0;
         width: 60px;
         height: 60px;
         border-radius: 20px;
@@ -420,7 +420,6 @@ header {
     }
 
     .formFilter {
-        margin-bottom: none;
         width: 480px;
         height: 120px;
     }
@@ -669,7 +668,7 @@ header {
         border-radius: 20px 20px 0px 0px;
         width: 98%;
         height: 170px;
-        padding: 1,5%;
+        padding: 1%;
     }
 
     .popular .cardsTxt {
